@@ -65,14 +65,12 @@
             <p class="feature__description">Не только китайского но и местного производства!</p>
           </div>
         </section>
-        <div class="advantage__wrapper">
-          <div class="advantage__picture advantage__picture--left">
-            <img src="img/bg-devil's bridge.jpg" width="1200" height="800" alt="Devil's bridge">
-          </div>
-          <div class="advantage__item">
-            <h3 class="advantage__name">Там есть мост дьявола</h3> - №2 -
-            <p class="advantage__description">Да, по нему можно пройти!Если конечно, вы осмелитесь</p>
-          </div>
+        <div class="advantage__item">
+          <h3 class="advantage__name">Там есть мост дьявола</h3> - №2 -
+          <p class="advantage__description">Да, по нему можно пройти!Если конечно, вы осмелитесь</p>
+        </div>
+        <div class="advantage__picture advantage__picture--left">
+          <img src="img/bg-devil's bridge.jpg" width="1200" height="800" alt="Devil's bridge">
         </div>
         <div class="other-advantages">
           <div class="advantage__item">
@@ -94,24 +92,25 @@
         <p class="promo__description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
         <button type="submit"><a>Поиск гостиницы в седоне<a/></button>
         <form method="post" class="search-hotels search-hotels__hidden">
-        <label for="date-entrance">Дата заезда:</label>
-        <input type="date" name="date-entrance" id="date-entrance">
-        <fieldset class="quantity__human">
-               <legend>Взрослые:</legend>
-               <input type="button" value="-" class="quantity__human--decrease" />
-               <input type="text" id="three-max" value="0" />
-               <input type="button" value="+" class="quantity__human--increase" />
-           </fieldset>
-           <fieldset class="quantity__children">
-               <legend>Дети:</legend>
-               <input type="button" value="-" class="quantity__children--decrease" />
-               <input type="text" id="six-max" value="0" />
-               <input type="button" value="+" class="quantity__children--increase" />
-           </fieldset>
-        <button type="submit" name="find">Найти</button>
+          <label for="date-entrance">Дата заезда:</label>
+          <input type="date" name="date-entrance" id="date-entrance">
+          <fieldset class="quantity__human">
+            <legend>Взрослые:</legend>
+              <input type="button" value="-" class="quantity__human--decrease">
+              <input type="text" id="three-max" value="0">
+              <input type="button" value="+" class="quantity__human--increase">
+          </fieldset>
+         <fieldset class="quantity__children">
+            <legend>Дети:</legend>
+              <input type="button" value="-" class="quantity__children--decrease">
+              <input type="text" id="six-max" value="0">
+              <input type="button" value="+" class="quantity__children--increase">
+         </fieldset>
+         <button type="submit" name="find">Найти</button>
         </form>
-      </div>
+        </div>
       <div class="map" id="map-canvas">
+      </div>
       </div>
     </main>
     <footer class="page-footer">
@@ -120,8 +119,8 @@
       </div>
       <div class="page-footer__social social">
         <a class="social__link social__link--tw">Твиттер</a>
-          <a class="social__link social__link--fb">Фейсбук</a>
-          <a class="social__link social__link--youtube">Ютуб</a>
+        <a class="social__link social__link--fb">Фейсбук</a>
+        <a class="social__link social__link--youtube">Ютуб</a>
       </div>
       <div class="page-footer__copyright">
         <p class="page-footer__developed">Website by</p>
