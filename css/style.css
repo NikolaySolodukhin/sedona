@@ -22,6 +22,197 @@
 
     src: url('../fonts/symbols-sedona.woff') format('woff'), url('../fonts/symbols-sedona.woff2') format('woff2');
 }
+*
+{
+    outline: 1px solid black;
+}
+html,
+body
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    font-family: 'PT Sans','Helvetica', 'Arial', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+
+    margin: 0;
+}
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.page-header
+{
+    margin: 0;
+}
+.page-header__logo
+{
+    position: absolute;
+
+    transform: translateX(388%);
+}
+.main-navigation__list
+{
+    display: flex;
+
+    margin: 0;
+
+    flex-wrap: wrap;
+}
+.main-navigation__item
+{
+    font-size: 14px;
+
+    padding-top: 14px;
+    padding-right: 71px;
+    padding-bottom: 14px;
+    padding-left: 71px;
+
+    list-style: none;
+
+    text-transform: uppercase;
+
+    flex-grow: 1;
+}
+.content-pictures
+{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+    padding-top: 78px;
+
+    background: url('../img/bg-picture-halls.jpg') no-repeat;
+
+    justify-content: center;
+}
+.content-pictures img
+{
+    margin-bottom: 80px;
+
+    align-self: center;
+}
+.content-picture__decoration
+{
+    width: 1200px;
+    min-height: 57px;
+
+    background: url('../img/decoration-element.png') no-repeat;
+
+    align-self: flex-end;
+}
+.page-description
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+.page-description__title
+{
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.page-description__reason
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+
+    margin-bottom: 60px;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+.advantages
+{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+.advantage__item
+{
+    text-align: center;
+
+    background-color: #81b3d2;
+
+    flex-grow: 1;
+}
+.advantage__name
+{
+    line-height: 21px;
+}
+.advantage__description
+{
+    font-size: 14px;
+    line-height: 21px;
+}
+.advantage__picture
+{
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    width: 799px;
+
+    flex-grow: 1;
+}
+.advantage__picture img
+{
+    position: absolute;
+    top: -120px;
+    right: -131px;
+}
+.features
+{
+    display: flex;
+}
+.feature__item
+{
+    text-align: center;
+}
+.other-advantages
+{
+    display: flex;
+
+    text-align: center;
+
+    flex-grow: 1;
+}
+.promo
+{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+.map
+{
+    display: flex;
+
+    width: 100%;
+    min-height: 472px;
+
+    background: url('../img/bg-map.jpg') no-repeat;
+    background-position: center;
+}
+.page-footer
+{
+    display: flex;
+
+    justify-content: space-around;
+}
 [class^='icon-']::before,
 [class*=' icon-']::before
 {

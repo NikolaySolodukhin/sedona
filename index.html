@@ -28,19 +28,22 @@
     </header>
     <main>
       <div class="content-pictures">
-        <img src="img\Sedona-title.png" width="458" height="352" alt="Welcome to the gargeous Sedona. Because the Grand Canyon sucks!">
+        <img src="img/Sedona-title.png" width="458" height="352" alt="Welcome to the gargeous Sedona. Because the Grand Canyon sucks!">
+        <div class="content-picture__decoration">
+        </div>
       </div>
       <div class="page-description">
-        <h2 class="page-description__title">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+        <h2 class="page-description__title">Седона — небольшой городок в аризоне,<br> заслуживающий большего!</h2>
         <p class="page-description__reason">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Коньон!</p>
       </div>
       <section class="advantages">
         <div class="advantage__item">
-          <h3 class="advantage__name">Настоящий городок</h3> - №1 -
-          <p class="advantage__description">Седона не атракцион для туристов там течет своя жизнь</p>
+          <h3 class="advantage__name">Настоящий<br>городок</h3> - №1 -
+          <p class="advantage__description">Седона не атракцион для туристов,
+            <br> там течет своя жизнь</p>
         </div>
         <div class="advantage__picture advantage__picture--right">
-          <img src="img/bg-city-sedona.jpg" width="1200" height="800" alt="city-Sedona">
+          <img src="img/bg-city-sedona.jpg" width="1600" height="800" alt="city-Sedona">
         </div>
         <section class="features">
           <div class="feature__item">
@@ -65,12 +68,13 @@
             <p class="feature__description">Не только китайского но и местного производства!</p>
           </div>
         </section>
-        <div class="advantage__item">
-          <h3 class="advantage__name">Там есть мост дьявола</h3> - №2 -
-          <p class="advantage__description">Да, по нему можно пройти!Если конечно, вы осмелитесь</p>
-        </div>
         <div class="advantage__picture advantage__picture--left">
-          <img src="img/bg-devil's bridge.jpg" width="1200" height="800" alt="Devil's bridge">
+          <img src="img/bg-devil's bridge.jpg" width="1600" height="800" alt="Devil's bridge">
+        </div>
+        <div class="advantage__item">
+          <h3 class="advantage__name">Там есть<br>мост дьявола</h3> - №2 -
+          <p class="advantage__description">Да, по нему можно пройти!Если конечно
+            <br> вы осмелитесь</p>
         </div>
         <div class="other-advantages">
           <div class="advantage__item">
@@ -109,26 +113,29 @@
          <button type="submit" name="find">Найти</button>
         </form>
         </div>
+  </div>
       <div class="map" id="map-canvas">
       </div>
-      </div>
-    </main>
+</main>
+
+<div class="container">
     <footer class="page-footer">
       <div class=page-footer__hashtag>
         <span>#VISITSEDONA</span>
       </div>
       <div class="page-footer__social social">
         <a class="social__link social__link--tw">Твиттер</a>
-        <a class="social__link social__link--fb">Фейсбук</a>
-        <a class="social__link social__link--youtube">Ютуб</a>
+          <a class="social__link social__link--fb">Фейсбук</a>
+          <a class="social__link social__link--youtube">Ютуб</a>
       </div>
       <div class="page-footer__copyright">
         <p class="page-footer__developed">Website by</p>
         <a class="page-footer__copyright-link" href="htmlacademy.ru"><img src="img/logo-ha.png" width="113" height="39" alt="HTML Academy"></a>
       </div>
       </footer>
-      <script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-      <script src="js/script.js"></script>
+  </div>
+  <script async src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
