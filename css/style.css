@@ -151,11 +151,17 @@ body
 .advantage__name
 {
     line-height: 21px;
+
+    color: #fff;
 }
 .advantage__description
 {
     font-size: 14px;
     line-height: 21px;
+
+    text-transform: uppercase;
+
+    color: #fff;
 }
 .advantage__picture
 {
