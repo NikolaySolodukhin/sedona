@@ -48,13 +48,15 @@ body
 }
 .page-header
 {
-    margin: 0;
+    position: relative;
 }
 .page-header__logo
 {
     position: absolute;
+    z-index: 2;
+    left: 50%;
 
-    transform: translateX(388%);
+    transform: translateX(-50%);
 }
 .main-navigation__list
 {
@@ -68,43 +70,47 @@ body
 {
     font-size: 14px;
 
+    width: 20%;
     padding-top: 14px;
-    padding-right: 71px;
+    padding-right: 10px;
     padding-bottom: 14px;
-    padding-left: 71px;
+    padding-left: 40px;
 
     list-style: none;
 
     text-transform: uppercase;
-
-    flex-grow: 1;
 }
 .content-pictures
 {
-    display: flex;
-    flex-direction: column;
+    position: relative;
 
+    width: 100%;
     margin-bottom: 60px;
     padding-top: 78px;
 
-    background: url('../img/bg-picture-halls.jpg') no-repeat;
+    text-align: center;
 
-    justify-content: center;
+    background: url('../img/bg-picture-halls.jpg') no-repeat;
 }
 .content-pictures img
 {
-    margin-bottom: 80px;
+    margin-bottom: 140px;
 
     align-self: center;
 }
-.content-picture__decoration
+.content-pictures::after
 {
-    width: 1200px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+
+    width: 100%;
     min-height: 57px;
 
-    background: url('../img/decoration-element.png') no-repeat;
+    content: '';
+    transform: translateX(-50%);
 
-    align-self: flex-end;
+    background: url('../img/decoration-element.png') no-repeat;;
 }
 .page-description
 {
@@ -140,23 +146,38 @@ body
 
     flex-wrap: wrap;
 }
+.advantage__list
+{
+    display: flex;
+
+    width: 100%;
+}
 .advantage__item
 {
+    font-size: 14px;
+    font-weight: 400;
+
+    width: 33.33%;
+
     text-align: center;
 
+    color: #fff;
     background-color: #81b3d2;
-
-    flex-grow: 1;
 }
 .advantage__name
 {
+    font-size: 21px;
+    font-weight: 700;
     line-height: 21px;
+
+    text-transform: uppercase;
 
     color: #fff;
 }
 .advantage__description
 {
     font-size: 14px;
+    font-weight: 400;
     line-height: 21px;
 
     text-transform: uppercase;
@@ -170,38 +191,138 @@ body
     display: flex;
     overflow: hidden;
 
-    width: 799px;
-
-    flex-grow: 1;
+    width: 66.66%;
+    min-height: 256px;
 }
 .advantage__picture img
 {
     position: absolute;
-    top: -120px;
-    right: -131px;
+    top: 50%;
+
+    width: 100%;
+    height: auto;
+
+    transform: translateY(-50%);
 }
 .features
 {
     display: flex;
+
+    width: 100%;
+
+    background-color: #fff;
+}
+.feature__icon
+{
+    min-height: 83px;
+    margin-top: 60px;
+}
+.feature__icon img
+{
+    text-align: сcenter;
 }
 .feature__item
 {
+    width: 33.33%;
+
     text-align: center;
+}
+.feature__name
+{
+    text-transform: uppercase;
+}
+.feature__description
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    margin-bottom: 60px;
+
+    text-transform: uppercase;
+
+    color: #333;
 }
 .other-advantages
 {
     display: flex;
 
+    width: 100%;
+
     text-align: center;
 
-    flex-grow: 1;
+    color: #000;
+    background-color: #eee;
+}
+.other-advantages .advantage__item
+{
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-top: 48px;
+
+    color: #333;
+    background-color: #eee;
+}
+.other-advantages .advantage__name
+{
+    text-align: center;
+
+    color: #000;
+}
+.other-advantages .advantage__description
+{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+
+    color: #333;
 }
 .promo
 {
+    position: relative;
+
     display: flex;
     flex-direction: column;
 
     text-align: center;
+}
+.promo__title
+{
+    text-transform: uppercase;
+}
+.promo__description
+{
+    font-size: 14px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+
+    color: #333;
+}
+.search-hotels
+{
+    position: absolute;
+    top: 215px;
+
+    width: 572px;
+
+    transform: translateX(55%);
+}
+.promo button
+{
+    font-size: 21px;
+
+    box-sizing: border-box;
+    width: 575px;
+    min-height: 85px;
+
+    text-transform: uppercase;
+
+    color: #fff;
+    background-color: #766357;
+
+    align-self: center;
 }
 .map
 {
@@ -217,7 +338,36 @@ body
 {
     display: flex;
 
+    min-height: 120px;
+    padding-bottom: 36px;
+
     justify-content: space-around;
+}
+.page-footer__hashtag
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.page-footer__social
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.page-footer__copyright
+{
+    display: flex;
+
+    flex-wrap: nowrap;
+}
+.page-footer__developed
+{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.page-footer__copyright-link
+{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 [class^='icon-']::before,
 [class*=' icon-']::before
