@@ -97,23 +97,27 @@
             <h3 class="promo__title">Заинтересовались?</h3>
             <p class="promo__description">Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="button">Поиск гостиницы в седоне</button>
-            <form method="post" class="search-hotels search-hotels__hidden">
-              <label for="date-entrance">Дата заезда:</label>
-              <input type="date" name="date-entrance" id="date-entrance">
-              <fieldset class="quantity__human">
-                <legend>Взрослые:</legend>
-                <input type="button" value="-" class="quantity__human--decrease">
-                <input type="text" id="three-max" value="0">
-                <input type="button" value="+" class="quantity__human--increase">
-              </fieldset>
-              <fieldset class="quantity__children">
-                <legend>Дети:</legend>
-                <input type="button" value="-" class="quantity__children--decrease">
-                <input type="text" id="six-max" value="0">
-                <input type="button" value="+" class="quantity__children--increase">
-              </fieldset>
-              <button type="submit" name="find">Найти</button>
-            </form>
+            <div class="search-hotels search-hotels__hidden">
+              <form method="post">
+                <fieldset class="date__entrance">
+                  <label for="date-entrance">Дата заезда:</label>
+                  <input type="date" name="date-entrance" id="date-entrance">
+                </fieldset>
+                <fieldset class="quantity__human">
+                  <legend>Взрослые:</legend>
+                  <input type="button" value="-" class="quantity__human--decrease">
+                  <input type="text" id="three-max" value="0">
+                  <input type="button" value="+" class="quantity__human--increase">
+                </fieldset>
+                <fieldset class="quantity__children">
+                  <legend>Дети:</legend>
+                  <input type="button" value="-" class="quantity__children--decrease">
+                  <input type="text" id="six-max" value="0">
+                  <input type="button" value="+" class="quantity__children--increase">
+                </fieldset>
+                <button type="submit" name="find">Найти</button>
+              </form>
+            </div>
           </div>
         </div>
         <div class="map" id="map-canvas">
