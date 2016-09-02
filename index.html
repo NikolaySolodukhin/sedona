@@ -96,26 +96,33 @@
           <div class="promo">
             <h3 class="promo__title">Заинтересовались?</h3>
             <p class="promo__description">Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
-            <button type="button">Поиск гостиницы в седоне</button>
-            <div class="search-hotels search-hotels__hidden">
+            <button type="button" class="promo__search">Поиск гостиницы в седоне</button>
+            <div class="search-hotels">
               <form method="post">
                 <fieldset class="date__entrance">
                   <label for="date-entrance">Дата заезда:</label>
-                  <input type="date" name="date-entrance" id="date-entrance">
+                  <input type="date" name="date-entrance" id="date-entrance" value="2016-03-24">
                 </fieldset>
-                <fieldset class="quantity__human">
-                  <legend>Взрослые:</legend>
-                  <input type="button" value="-" class="quantity__human--decrease">
-                  <input type="text" id="three-max" value="0">
-                  <input type="button" value="+" class="quantity__human--increase">
+                <fieldset class="date__departure">
+                  <label for="date-departure">Дата выезда:</label>
+                  <input type="date" name="date-departure" id="date-departure"
+                  value="2016-07-04">
                 </fieldset>
-                <fieldset class="quantity__children">
-                  <legend>Дети:</legend>
-                  <input type="button" value="-" class="quantity__children--decrease">
-                  <input type="text" id="six-max" value="0">
-                  <input type="button" value="+" class="quantity__children--increase">
+                <fieldset class="quantity-people">
+                  <fieldset class="quantity__human">
+                    <label>Взрослые:</label>
+                    <button type="button" value="-" class="quantity__human--decrease"></button>
+                    <input type="text" id="three-max" value="2">
+                    <button type="button" value="+" class="quantity__human--increase"></button>
+                  </fieldset>
+                  <fieldset class="quantity__children">
+                    <label>Дети:</label>
+                    <button type="button" value="-" class="quantity__children--decrease"></button>
+                    <input type="text" id="six-max" value="0">
+                    <button type="button" value="+" class="quantity__children--increase"></button>
+                  </fieldset>
                 </fieldset>
-                <button type="submit" name="find">Найти</button>
+                <button type="submit" name="find" class="search-hotels__find">Найти</button>
               </form>
             </div>
           </div>
