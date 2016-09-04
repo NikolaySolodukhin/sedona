@@ -24,7 +24,10 @@
 
     src: url('../fonts/symbols-sedona.woff') format('woff'), url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-
+*
+{
+    outline: 1px solid black;
+}
 
 html,
 body
@@ -89,7 +92,21 @@ body
 
     list-style: none;
 
-    text-align: center;
+    text-align: left;
+}
+.main-navigation__item:nth-child(2)
+{
+    margin-right: 20%;
+    padding-left: 60px;
+}
+.main-navigation__item:nth-child(3)
+{
+    padding-right: 64px;
+}
+.main-navigation__item:nth-child(3),
+.main-navigation__item:nth-child(4)
+{
+    text-align: right;
 }
 
 .main-navigation__item a
@@ -108,7 +125,18 @@ body
 {
     color: rgba(0, 0, 0, .3);
 }
-
+.main-navigation__item--active a
+{
+    color: #766357;
+}
+.main-navigation__item--active a:hover
+{
+    color: #604e43;
+}
+.main-navigation__item--active a:active
+{
+    color: rgba(118,99,87,.3);
+}
 .hotels-features
 {
     padding: 0 6%;
@@ -208,12 +236,9 @@ input[type=checkbox]:checked + label::before
 
 .filter__range
 {
-    margin-top: 1px;
-    margin-left: 70px;
+    width: 330px;
 
     text-align: center;
-
-    flex-basis: 33.3%;
 }
 
 .filter__range-title
@@ -229,61 +254,58 @@ input[type=checkbox]:checked + label::before
 
 .controls__price
 {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 21px;
+    font-size: 0;
 
     position: relative;
 
-    border: 2px solid #fff;
-    border-radius: 3px;
-}
+    min-height: 36px;
 
-.controls__price::before
+    border: 2px solid #fff;
+    border-radius: 2px;
+}
+.controls__price::after
 {
     position: absolute;
-    top: 5px;
-    left: 51%;
+    top: 50%;
+    left: 50%;
 
     width: 2px;
-    min-height: 23px;
-    margin-left: -2px;
+    height: 22px;
 
     content: '';
+    transform: translate(-50%, -50%);
 
-    background-color: #fff;
+    background: #fff;
 }
-
-.controls__price label:first-child
-{
-    width: 36%;
-}
-
-.controls__price label:last-child
-{
-    width: 37%;
-}
-
 .controls__price label
 {
+    font-size: 14px;
+    line-height: 38px;
+
     display: inline-block;
 
-    padding: 0 6%;
-
-    text-align: center;
+    cursor: pointer;
+    vertical-align: top;
 }
+.control__price--min,
+.control__price--max
+{
+    font-weight: 400;
 
+    width: 120px;
+    padding-left: 30px;
+}
 .controls__price input
 {
-    max-width: 50%;
+    font: inherit;
 
-    color: #fff;
-    border: 0;
-    background-color: transparent;
-}
-.controls__container
-{
-    display: inline-block;
+    width: 50px;
+    margin: 0;
+
+    color: inherit;
+    border: none;
+    outline: none;
+    background: none;
 }
 .range__controls
 {
@@ -420,9 +442,13 @@ input[type=checkbox]:checked + label::before
 
     list-style: none;
 }
-.sorting__list li:nth-child(2)
+.sorting__item--active
 {
     color: #81b3d2;
+}
+.sorting__item:not(:nth-child(1)):not(:nth-child(2)) a
+{
+    border-bottom: 1px dashed #81b3d2;
 }
 .sorting__item
 {
@@ -450,6 +476,8 @@ input[type=checkbox]:checked + label::before
 
 .arrow__item
 {
+    margin-right: -14px;
+
     color: #ccc;
 }
 
@@ -505,6 +533,8 @@ input[type=checkbox]:checked + label::before
     display: flex;
 
     padding: 30px 6%;
+
+    border-bottom: 1px solid #e5e5e5;
 
     align-items: flex-start;
 }
@@ -594,7 +624,7 @@ input[type=checkbox]:checked + label::before
     font-size: 14px;
     line-height: 21px;
 
-    padding: 6px 10px 6px 10px;
+    padding: 3px 11px 3px 11px;
 
     text-align: center;
 }
@@ -1276,15 +1306,31 @@ input[type=checkbox]:checked + label::before
     line-height: 26px;
 
     display: inline-block;
+
+    margin-right: 10px;
+
+    align-self: center;
 }
 
 .page-footer__copyright-link
 {
     display: inline-block;
 
+    width: 113px;
     height: 39px;
-}
 
+    background: url('../img/logo-ha.png') no-repeat;
+
+    align-self: center;
+}
+.page-footer__copyright-link:hover
+{
+    background: url('../img/logo-ha-hover.png') no-repeat;
+}
+.page-footer__copyright-link:active
+{
+    background: url('../img/logo-ha-active.png') no-repeat;
+}
 @keyframes slideInDown
 {
     from
