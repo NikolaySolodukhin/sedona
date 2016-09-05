@@ -24,10 +24,6 @@
 
     src: url('../fonts/symbols-sedona.woff') format('woff'), url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-*
-{
-    outline: 1px solid black;
-}
 
 html,
 body
@@ -404,7 +400,7 @@ input[type=checkbox]:checked + label::before
 {
     display: flex;
 
-    padding: 9px 6% 14px;
+    padding: 9px 6% 12px;
 
     border-bottom: 1px solid #e5e5e5;
 
@@ -422,13 +418,14 @@ input[type=checkbox]:checked + label::before
     line-height: 26px;
 
     width: 135px;
-    margin-top: 17px;
+    margin-top: 7px;
 }
 
 .sorting__list
 {
     display: flex;
 
+    margin-top: 14px;
     padding-left: 26px;
 }
 
@@ -532,7 +529,7 @@ input[type=checkbox]:checked + label::before
 {
     display: flex;
 
-    padding: 30px 6%;
+    padding: 27px 6%;
 
     border-bottom: 1px solid #e5e5e5;
 
@@ -551,7 +548,7 @@ input[type=checkbox]:checked + label::before
     font-weight: 700;
     line-height: 26px;
 
-    margin-top: 0;
+    margin-top: -6px;
     margin-bottom: 0;
 
     color: #000;
@@ -708,7 +705,7 @@ input[type=checkbox]:checked + label::before
     position: relative;
 
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-top: 78px;
 
     text-align: center;
@@ -719,7 +716,7 @@ input[type=checkbox]:checked + label::before
 
 .content-pictures img
 {
-    margin-bottom: 140px;
+    margin-bottom: 75px;
 
     align-self: center;
 }
@@ -763,7 +760,7 @@ input[type=checkbox]:checked + label::before
     font-weight: 400;
     line-height: 26px;
 
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     text-align: center;
 }
@@ -802,6 +799,8 @@ input[type=checkbox]:checked + label::before
     font-weight: 700;
     line-height: 21px;
 
+    margin-top: 53px;
+
     color: #fff;
 }
 
@@ -810,6 +809,8 @@ input[type=checkbox]:checked + label::before
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;
+
+    margin-top: 20px;
 
     color: #fff;
 }
@@ -855,7 +856,14 @@ input[type=checkbox]:checked + label::before
 {
     text-align: сcenter;
 }
+.feature__name
+{
+    font-size: 21px;
+    line-height: 21px;
 
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
 .feature__item
 {
     width: 33.33%;
@@ -869,7 +877,7 @@ input[type=checkbox]:checked + label::before
     font-weight: 400;
     line-height: 21px;
 
-    margin-bottom: 60px;
+    margin-bottom: 85px;
 
     color: #333;
 }
@@ -891,14 +899,14 @@ input[type=checkbox]:checked + label::before
     font-size: 14px;
     font-weight: 400;
 
-    margin-top: 48px;
-
     color: #333;
     background-color: #eee;
 }
 
 .other-advantages .advantage__name
 {
+    margin-top: 50px;
+
     text-align: center;
 
     color: #000;
@@ -910,6 +918,8 @@ input[type=checkbox]:checked + label::before
     font-weight: 400;
     line-height: 21px;
 
+    margin-bottom: 60px;
+
     color: #333;
 }
 
@@ -920,13 +930,23 @@ input[type=checkbox]:checked + label::before
     display: flex;
     flex-direction: column;
 
+    padding-top: 27px;
+
     text-align: center;
 }
+.promo__title
+{
+    font-size: 30px;
+    line-height: 24px;
 
+    margin-bottom: 15px;
+}
 .promo__description
 {
     font-size: 14px;
     font-weight: 400;
+
+    margin-bottom: 45px;
 
     color: #333;
 }
@@ -935,21 +955,31 @@ input[type=checkbox]:checked + label::before
 {
     position: absolute;
     z-index: 2;
-    top: 240px;
+    top: 100%;
     left: 50%;
 
     display: block;
+    overflow: hidden;
 
     box-sizing: border-box;
-    width: 574px;
-    padding: 55px;
+    width: 573px;
+    height: 400px;
 
     transform: translateX(-50%);
+}
+.search-hotels form
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 392px;
+    padding: 55px;
+
     animation: slideInDown .6s;
 
-    background-color: #fff;
+    background: #fff;
 }
-
 .search-hotels__hidden
 {
     display: none;
@@ -983,7 +1013,6 @@ input[type=checkbox]:checked + label::before
 
     text-align: left;
 }
-
 .quantity-people
 {
     margin-bottom: 54px;
@@ -1004,10 +1033,11 @@ input[type=checkbox]:checked + label::before
     position: relative;
 
     display: inline-block;
-
-    width: 113px;
 }
-
+.quantity__human label
+{
+    width: 114px;
+}
 .quantity__children label
 {
     font-size: 14px;
@@ -1017,7 +1047,13 @@ input[type=checkbox]:checked + label::before
     width: 65px;
     margin-left: 52px;
 }
+.date__entrance label::before,
+.date__departure label::before
+{
+    position: absolute;
 
+    content: '\e800';
+}
 .date__entrance input,
 .date__departure input,
 .quantity__human input,
@@ -1035,6 +1071,11 @@ input[type=checkbox]:checked + label::before
 
     border: none;
     background-color: #f2f2f2;
+}
+.date__entrance input,
+.date__departure input
+{
+    margin-left: 20px;
 }
 .date__entrance input[type='text']::-webkit-input-placeholder,
 .date__departure input[type='text']::-webkit-input-placeholder
@@ -1082,7 +1123,9 @@ input[type=checkbox]:checked + label::before
 .quantity__human--decrease::before,
 .quantity__children--decrease::before,
 .quantity__human--increase::before,
-.quantity__children--increase::before
+.quantity__children--increase::before,
+.date__entrance label::before,
+.date__departure label::before
 {
     font-family: 'symbols-sedona';
     font-weight: 400;
@@ -1136,7 +1179,7 @@ input[type=checkbox]:checked + label::before
     font-size: 21px;
 
     box-sizing: border-box;
-    width: 575px;
+    width: 573px;
     min-height: 85px;
 
     text-transform: uppercase;
@@ -1230,7 +1273,7 @@ input[type=checkbox]:checked + label::before
     padding: 13px 0;
 
     vertical-align: middle;
-    text-indent: -100%;
+    text-indent: -99999px;
 
     color: rgba(255,255,255,1);
     background-color: #81b3d2;
@@ -1297,39 +1340,35 @@ input[type=checkbox]:checked + label::before
 
     flex-basis: 33.3%;
     justify-content: center;
+    align-items: center;
 }
 
 .page-footer__developed
 {
     font-size: 14px;
     font-weight: 400;
-    line-height: 26px;
-
-    display: inline-block;
 
     margin-right: 10px;
-
-    align-self: center;
 }
 
 .page-footer__copyright-link
 {
-    display: inline-block;
-
     width: 113px;
     height: 39px;
 
-    background: url('../img/logo-ha.png') no-repeat;
-
-    align-self: center;
+    background: url('../img/ha-sprite.png')
+    no-repeat;
+    background-position: -5px -5px;
 }
 .page-footer__copyright-link:hover
 {
-    background: url('../img/logo-ha-hover.png') no-repeat;
+    background: url('../img/ha-sprite.png') no-repeat;
+    background-position: -5px -103px;
 }
 .page-footer__copyright-link:active
 {
-    background: url('../img/logo-ha-active.png') no-repeat;
+    background: url('../img/ha-sprite.png') no-repeat;
+    background-position: -5px -54px;
 }
 @keyframes slideInDown
 {
@@ -1344,6 +1383,5 @@ input[type=checkbox]:checked + label::before
     {
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
-                transform: translateX(-50%);
     }
 }
