@@ -136,7 +136,7 @@ body
     display: -ms-flexbox;
     display: flex;
 
-    padding-bottom: 21px;
+    padding-bottom: 8px;
 
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -150,6 +150,8 @@ body
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+
+    margin-bottom: 8px;
 
     -ms-flex-preferred-size: 66.7%;
     flex-basis: 66.7%;
@@ -190,7 +192,7 @@ body
 
     position: relative;
 
-    padding: 14px 0;
+    padding: 13px 0;
 
     list-style: none;
 }
@@ -200,15 +202,15 @@ body
     margin-left: 39px;
 }
 
-input[name$='check']
+input[type='checkbox']
 {
     display: none;
 }
-input[type=checkbox]:disabled + label::before
+input[type='checkbox']:disabled + label::before
 {
     color: #6a6a6a;
 }
-input[type=checkbox] + label::before
+input[type='checkbox'] + label::before
 {
     font-family: 'symbols-sedona';
     font-size: 26px;
@@ -216,13 +218,13 @@ input[type=checkbox] + label::before
 
     position: absolute;
     top: 13px;
-    left: -39px;
+    left: -44px;
 
     content: '\2610';
     cursor: pointer;
 }
 
-input[type=checkbox]:checked + label::before
+input[type='checkbox']:checked + label::before
 {
     content: '\2611';
 }
@@ -240,7 +242,8 @@ input[type=checkbox]:checked + label::before
     font-weight: 700;
     line-height: 21px;
 
-    margin-bottom: 10px;
+    margin-bottom: 9px;
+    margin-left: 8px;
 
     text-align: left;
 }
@@ -251,7 +254,9 @@ input[type=checkbox]:checked + label::before
 
     position: relative;
 
+    width: 316px;
     min-height: 36px;
+    margin-left: 17px;
 
     border: 2px solid #fff;
     border-radius: 2px;
@@ -274,7 +279,7 @@ input[type=checkbox]:checked + label::before
 .controls__price label
 {
     font-size: 14px;
-    line-height: 38px;
+    line-height: 32px;
 
     display: inline-block;
 
@@ -287,7 +292,7 @@ input[type=checkbox]:checked + label::before
     font-weight: 400;
 
     width: 120px;
-    padding-left: 30px;
+    padding-left: 32px;
 }
 .controls__price input
 {
@@ -305,14 +310,14 @@ input[type=checkbox]:checked + label::before
 {
     position: relative;
 
-    margin-top: 20px;
+    margin-top: 17px;
 }
 
 .range__controls::before,
 .range__controls::after
 {
     position: absolute;
-    left: 23px;
+    left: 35px;
 
     min-height: 2px;
 
@@ -323,7 +328,7 @@ input[type=checkbox]:checked + label::before
 
 .range__controls::before
 {
-    right: 2px;
+    right: -4px;
 
     max-width: 307px;
 
@@ -346,7 +351,7 @@ input[type=checkbox]:checked + label::before
 
     cursor: pointer;
 
-    border: 8px solid #fff;
+    border: 9px solid #fff;
     border-radius: 50%;
     background-color: #ababab;
 }
@@ -356,12 +361,12 @@ input[type=checkbox]:checked + label::before
 }
 .range__toggle--min
 {
-    left: 11px;
+    left: 19px;
 }
 
 .range__toggle--max
 {
-    right: 46px;
+    right: 40px;
 }
 
 .btn-transparent
@@ -369,9 +374,9 @@ input[type=checkbox]:checked + label::before
     font-size: 14px;
     line-height: 26px;
 
-    width: 133px;
+    width: 134px;
     margin-top: 35px;
-    margin-left: 1px;
+    margin-left: 13px;
     padding: 3px 0;
 
     text-transform: uppercase;
@@ -428,7 +433,6 @@ input[type=checkbox]:checked + label::before
     line-height: 26px;
 
     width: 135px;
-    margin-top: 7px;
 }
 
 .sorting__list
@@ -437,8 +441,8 @@ input[type=checkbox]:checked + label::before
     display: -ms-flexbox;
     display: flex;
 
-    margin-top: 14px;
-    padding-left: 26px;
+    margin-top: 27px;
+    padding-left: 29px;
 }
 
 .sorting__list li
@@ -447,7 +451,7 @@ input[type=checkbox]:checked + label::before
     font-weight: 400;
     line-height: 18px;
 
-    width: 110px;
+    width: 115px;
 
     list-style: none;
 }
@@ -459,12 +463,11 @@ input[type=checkbox]:checked + label::before
 {
     border-bottom: 1px dashed #81b3d2;
 }
-.sorting__item
-{
-    font-size: 12px;
-    line-height: 18px;
 
-    width: 110px;
+.sorting__list li:nth-child(2),
+.sorting__list li:nth-child(3)
+{
+    width: 80px;
 }
 .sorting__list li:not(:nth-child(1)):not(:nth-child(2))
 {
@@ -480,7 +483,7 @@ input[type=checkbox]:checked + label::before
 }
 .arrows
 {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 .arrow__item
@@ -1288,6 +1291,7 @@ input[type='text']::-webkit-input-placeholder
     text-transform: uppercase;
 
     color: #fff;
+    border: none;
     background-color: #766357;
 
     -ms-flex-item-align: center;
@@ -1302,6 +1306,7 @@ input[type='text']::-webkit-input-placeholder
     text-transform: uppercase;
 
     color: #fff;
+    border: none;
     background-color: #81b3d2;
 }
 
