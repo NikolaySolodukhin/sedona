@@ -8,7 +8,6 @@ buttonChoose.onclick = function() {
     form.classList.add('search-hotels__hidden');
   }
 };
-
 ymaps.ready(function () {
   var myMap = new ymaps.Map('map-canvas', {
     center: [59.938631, -111.763806],
@@ -18,7 +17,7 @@ ymaps.ready(function () {
   }),
   myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
     hintContent: 'Собственный значок метки',
-    balloonContent: 'Это красивая метка'
+    balloonContent: 'Sedona'
   }, {
     iconLayout: 'default#image',
   });

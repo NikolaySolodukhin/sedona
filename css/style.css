@@ -6,10 +6,7 @@
 
     src: url('../fonts/symbols-sedona.woff') format('woff'), url('../fonts/symbols-sedona.woff2') format('woff2');
 }
-*
-{
-    outline: 1px solid black;
-}
+
 html,
 body
 {
@@ -508,6 +505,7 @@ input[type=checkbox]:checked + label::before
     margin-left: .2em;
 
     text-align: center;
+    vertical-align: top;
     text-decoration: inherit;
     text-transform: none;
 
@@ -594,6 +592,8 @@ input[type=checkbox]:checked + label::before
 
     width: 93px;
     margin-right: 20px;
+
+    vertical-align: baseline;
 }
 
 .hotel__item-name,
@@ -618,6 +618,7 @@ input[type=checkbox]:checked + label::before
     width: 100%;
 
     cursor: pointer;
+    vertical-align: baseline;
 
     color: #fff;
     border: 0;
@@ -669,6 +670,8 @@ input[type=checkbox]:checked + label::before
 .hotel__item-reservation
 {
     display: inline-block;
+
+    vertical-align: baseline;
 }
 
 .hotel__item-cost
@@ -904,7 +907,7 @@ input[type=checkbox]:checked + label::before
 
 .feature__icon img
 {
-    text-align: сcenter;
+    text-align: сenter;
 }
 .feature__name
 {
@@ -1072,6 +1075,7 @@ input[type=checkbox]:checked + label::before
     margin-bottom: 30px;
 
     text-align: left;
+    vertical-align: baseline;
 }
 .quantity-people
 {
@@ -1082,6 +1086,8 @@ input[type=checkbox]:checked + label::before
 .quantity__children
 {
     display: inline-block;
+
+    vertical-align: baseline;
 }
 
 .date__entrance label,
@@ -1093,6 +1099,8 @@ input[type=checkbox]:checked + label::before
     position: relative;
 
     display: inline-block;
+
+    vertical-align: baseline;
 }
 .quantity__human label
 {
@@ -1106,6 +1114,8 @@ input[type=checkbox]:checked + label::before
 
     width: 65px;
     margin-left: 52px;
+
+    vertical-align: baseline;
 }
 .date__entrance label::before,
 .date__departure label::before
@@ -1145,6 +1155,8 @@ input[type=checkbox]:checked + label::before
     box-sizing: border-box;
     width: 345px;
     padding: 5px 12px;
+
+    vertical-align: baseline;
 
     border: none;
     background-color: #f2f2f2;
@@ -1217,6 +1229,7 @@ input[type=checkbox]:checked + label::before
     margin-left: .2em;
 
     text-align: center;
+    vertical-align: baseline;
     text-decoration: inherit;
     text-transform: none;
 
@@ -1325,9 +1338,6 @@ input[type=checkbox]:checked + label::before
     font-weight: 700;
     line-height: 26px;
 
-    margin-top: auto;
-    margin-bottom: auto;
-
     -ms-flex-preferred-size: 33.33%;
     flex-basis: 33.33%;
     -ms-flex-item-align: center;
@@ -1399,6 +1409,7 @@ input[type=checkbox]:checked + label::before
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     text-align: center;
+    vertical-align: baseline;
     text-decoration: inherit;
     text-indent: 0;
     text-transform: none;
