@@ -711,8 +711,9 @@ input[type='checkbox']:checked + label::before
 {
     min-height: 27px;
     margin-top: -7px;
-    margin-right: 5px;
+    margin-right: 4px;
     margin-bottom: 29px;
+    margin-left: 4px;
 }
 
 .hotel-star__item::before
