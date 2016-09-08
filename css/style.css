@@ -749,7 +749,7 @@ input[type='checkbox']:checked + label::before
 
     text-align: center;
 
-    background: #b98a85 url('../img/bg-picture-halls.jpg') no-repeat;
+    background: #c79a89 url('../img/bg-picture-halls.jpg') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -774,7 +774,7 @@ input[type='checkbox']:checked + label::before
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
 
-    background: #000 url('../img/decoration-element.png') no-repeat;
+    background: url('../img/decoration-element.png') no-repeat;
     background-size: 100% 57px;
 }
 
@@ -1334,7 +1334,7 @@ input[type='text']::-webkit-input-placeholder
     width: 100%;
     min-height: 472px;
 
-    background: url('../img/bg-map.jpg') no-repeat;
+    background: #cbdda9 url('../img/bg-map.jpg') no-repeat;
     background-position: center;
 }
 
