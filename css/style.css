@@ -126,7 +126,7 @@ body
     padding: 0 6%;
 
     color: #fff;
-    background: url('../img/bg-hotels.jpg') no-repeat;
+    background: #686360 url('../img/bg-hotels.jpg') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -749,7 +749,7 @@ input[type='checkbox']:checked + label::before
 
     text-align: center;
 
-    background: url('../img/bg-picture-halls.jpg') no-repeat;
+    background: #b98a85 url('../img/bg-picture-halls.jpg') no-repeat;
     background-size: 100% 100%;
 }
 
@@ -774,7 +774,7 @@ input[type='checkbox']:checked + label::before
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
 
-    background: url('../img/decoration-element.png') no-repeat;
+    background: #000 url('../img/decoration-element.png') no-repeat;
     background-size: 100% 57px;
 }
 
