@@ -554,6 +554,7 @@ input[type='checkbox']:checked + label::before
     display: -ms-flexbox;
     display: flex;
 
+    margin-bottom: 2px;
     padding: 28px 6%;
 
     border-bottom: 1px solid #e5e5e5;
@@ -681,7 +682,7 @@ input[type='checkbox']:checked + label::before
 
 .hotel__item-cost
 {
-    margin: 0 0 14px;
+    margin: 0 0 11px;
 }
 
 .hotel-stars
@@ -709,14 +710,15 @@ input[type='checkbox']:checked + label::before
 .hotel-star__item
 {
     min-height: 27px;
+    margin-top: -7px;
     margin-right: 5px;
-    margin-bottom: 21px;
+    margin-bottom: 29px;
 }
 
 .hotel-star__item::before
 {
     font-family: 'symbols-sedona';
-    font-size: 21px;
+    font-size: 16px;
     line-height: 21px;
 
     content: '\2605';
