@@ -6,9 +6,9 @@
   <title>Седона</title>
   <meta name="keywords" content="tourism travels sedona">
   <meta name="description" content="small town in Arizon">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
@@ -19,8 +19,8 @@
       </div>
       <nav class="main-navigation">
         <ul class="main-navigation__list">
-          <li class="main-navigation__item"><a>Информация</a></li>
-          <li class="main-navigation__item"><a>Фото и видео</a></li>
+          <li class="main-navigation__item"><a href="info.html">Информация</a></li>
+          <li class="main-navigation__item"><a href="photo.html">Фото и видео</a></li>
           <li class="main-navigation__item"><a href="#map-canvas">Карта штата</a></li>
           <li class="main-navigation__item"><a href="hotels.html">Гостиницы</a></li>
         </ul>
@@ -28,7 +28,7 @@
     </header>
     <main>
       <div class="content-pictures">
-        <img src="img/Sedona-title.png" width="458" height="352" alt="Welcome to the gargeous Sedona. Because the Grand Canyon sucks!">
+        <img src="img/sedona-title.png" width="458" height="352" alt="Welcome to the gargeous Sedona. Because the Grand Canyon sucks!">
       </div>
       <div class="page-description">
         <h2 class="page-description__title">Седона — небольшой городок в аризоне,<br> заслуживающий большего!</h2>
@@ -95,61 +95,60 @@
           </section>
           <div class="promo">
             <h3 class="promo__title">Заинтересовались?</h3>
-            <p class="promo__description">Укажите предпологаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <p class="promo__description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <button type="button" class="promo__search">Поиск гостиницы в седоне</button>
             <div class="search-hotels" id="search">
               <form method="post">
                 <fieldset class="date__entrance">
-                  <label for="date-entrance">Дата заезда:
-                    <input type="text" name="date-entrance" id="date-entrance" placeholder="24 АПРЕЛЯ 2016"></label>
+                  <label for="date-entrance">Дата заезда:<input type="text" name="date-entrance" id="date-entrance" placeholder="24 АПРЕЛЯ 2016"></label>
+                  <span class="date__entrance--icon"></span>
+                </fieldset>
+                <fieldset class="date__departure">
+                  <label for="date-departure">Дата выезда:<input type="text" name="date-departure" id="date-departure"
+                    placeholder="4 ИЮЛЯ 2016" ></label>
+                    <span class="date__departure--icon"></span>
                   </fieldset>
-                  <fieldset class="date__departure">
-                    <label for="date-departure">Дата выезда:
-                      <input type="text" name="date-departure" id="date-departure"
-                      placeholder="4 ИЮЛЯ 2016" ></label>
+                  <fieldset class="quantity-people">
+                    <fieldset class="quantity__human">
+                      <label>Взрослые:</label>
+                      <button type="button" value="-" class="quantity__human--decrease"></button>
+                      <input type="text" id="three-max" value="2">
+                      <button type="button" value="+" class="quantity__human--increase"></button>
                     </fieldset>
-                    <fieldset class="quantity-people">
-                      <fieldset class="quantity__human">
-                        <label>Взрослые:</label>
-                        <button type="button" value="-" class="quantity__human--decrease"></button>
-                        <input type="text" id="three-max" value="2">
-                        <button type="button" value="+" class="quantity__human--increase"></button>
-                      </fieldset>
-                      <fieldset class="quantity__children">
-                        <label>Дети:</label>
-                        <button type="button" value="-" class="quantity__children--decrease"></button>
-                        <input type="text" id="six-max" value="0">
-                        <button type="button" value="+" class="quantity__children--increase"></button>
-                      </fieldset>
+                    <fieldset class="quantity__children">
+                      <label>Дети:</label>
+                      <button type="button" value="-" class="quantity__children--decrease"></button>
+                      <input type="text" id="six-max" value="0">
+                      <button type="button" value="+" class="quantity__children--increase"></button>
                     </fieldset>
-                    <button type="submit" name="find" class="search-hotels__find">Найти</button>
-                  </form>
-                </div>
+                  </fieldset>
+                  <button type="submit" name="find" class="search-hotels__find">Найти</button>
+                </form>
               </div>
-            </main>
-          </div>
+            </div>
+          </main>
           <div class="map" id="map-canvas">
           </div>
+        </div>
+        <div class="container">
+          <footer class="page-footer">
+            <div class="page-footer__hashtag">
+              <span>#VISITSEDONA</span>
+            </div>
+            <div class="page-footer__social social">
+              <a href="https://www.twitter.com" class="social__link social__link--tw">Твиттер</a>
+              <a href="https://www.facebook.com" class="social__link social__link--fb">Фейсбук</a>
+              <a href="https://www.youtube.com" class="social__link social__link--youtube">Ютуб</a>
+            </div>
+            <div class="page-footer__copyright">
+              <p class="page-footer__developed">Website by</p>
+              <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"></a>
+            </div>
+          </footer>
+        </div>
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/script.min.js"></script>
 
-          <div class="container">
-            <footer class="page-footer">
-              <div class=page-footer__hashtag>
-                <span>#VISITSEDONA</span>
-              </div>
-              <div class="page-footer__social social">
-                <a class="social__link social__link--tw">Твиттер</a>
-                <a class="social__link social__link--fb">Фейсбук</a>
-                <a class="social__link social__link--youtube">Ютуб</a>
-              </div>
-              <div class="page-footer__copyright">
-                <p class="page-footer__developed">Website by</p>
-                <a class="page-footer__copyright-link" href="https://www.htmlacademy.ru"></a>
-              </div>
-            </footer>
-          </div>
-          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-          <script src="js/script.min.js"></script>
+      </body>
 
-        </body>
-
-        </html>
+      </html>

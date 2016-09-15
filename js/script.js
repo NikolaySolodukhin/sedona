@@ -1,6 +1,8 @@
 var buttonChoose = document.querySelector('.promo__search');
 var form = document.querySelector('.search-hotels');
-document.getElementById('search').classList.add('search-hotels__hidden');
+if (document.getElementById('search')){
+form.classList.add('search-hotels__hidden');
+};
 buttonChoose.onclick = function() {
   if (form.classList.contains('search-hotels__hidden')) {
     form.classList.remove('search-hotels__hidden');
