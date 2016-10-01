@@ -448,8 +448,8 @@ input[type='checkbox']:checked + label::before
     display: flex;
 
     width: 700px;
-    margin-top: 27px;
-    padding-left: 29px;
+    margin-top: 28px;
+    padding-left: 0;
 }
 
 .sorting__list li
@@ -458,9 +458,15 @@ input[type='checkbox']:checked + label::before
     font-weight: 400;
     line-height: 18px;
 
-    width: 115px;
+    width: 80px;
+    padding-right: 2px;
 
     list-style: none;
+}
+.sorting__item:first-child
+{
+    margin-right: 32px;
+    padding-left: 29px;
 }
 .sorting__item--active
 {
@@ -474,11 +480,6 @@ input[type='checkbox']:checked + label::before
     border-bottom: 1px dashed #81b3d2;
 }
 
-.sorting__list li:nth-child(2),
-.sorting__list li:nth-child(3)
-{
-    width: 80px;
-}
 .sorting__item:hover:not(:nth-child(1)):not(:nth-child(2)) a
 {
     color: #81b3d2;
@@ -515,6 +516,7 @@ input[type='checkbox']:checked + label::before
     margin-right: .2em;
     margin-left: .2em;
 
+    cursor: pointer;
     text-align: center;
     vertical-align: top;
     text-decoration: inherit;
@@ -1366,6 +1368,7 @@ input[type='text']::-webkit-input-placeholder
 
     width: 100%;
     min-height: 472px;
+    margin-bottom: 2px;
 
     background: #cbdda9 url('../img/bg-map.jpg') no-repeat;
     background-position: center;
@@ -1380,7 +1383,7 @@ input[type='text']::-webkit-input-placeholder
     display: flex;
 
     width: 100%;
-    padding: 35px 0 35px;
+    padding: 33px 0 35px;
 
     text-align: center;
 
@@ -1422,7 +1425,7 @@ input[type='text']::-webkit-input-placeholder
 
     width: 45px;
     margin: 1px;
-    padding: 13px 0;
+    padding: 15px 0;
 
     vertical-align: middle;
     text-decoration: none;
@@ -1431,7 +1434,10 @@ input[type='text']::-webkit-input-placeholder
     color: rgba(255,255,255,1);
     background-color: #81b3d2;
 }
-
+.social__link:nth-child(3)
+{
+    font-size: 23px;
+}
 .social__link:hover
 {
     background-color: #669ec0;
@@ -1473,7 +1479,6 @@ input[type='text']::-webkit-input-placeholder
 
     speak: none;
 }
-
 .social__link--tw::before
 {
     content: '\74';
