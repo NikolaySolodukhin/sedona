@@ -1,3 +1,11 @@
 .page-header {
   position: relative;
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+
+    transform: translateX(-50%);
+  }
 }

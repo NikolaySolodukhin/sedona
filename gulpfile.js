@@ -87,7 +87,7 @@ gulp.task('style:dev', function() {
         clearReportedMessages: 'true'
       })
     ]))
-    .pipe(csscomb('/.csscomb.json'))
+    .pipe(csscomb('.csscomb.json'))
     .pipe(gulp.dest('css'))
     .pipe(server.stream());
 });

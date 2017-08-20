@@ -35,7 +35,6 @@
     "postcss-browser-reporter": "^0.5.0",
     "postcss-flexbugs-fixes": "^3.0.0",
     "postcss-reporter": "^5.0.0",
-    "pre-commit": "^1.2.2",
     "precss": "2.0.0",
     "run-sequence": "^2.1.0"
   },
@@ -50,8 +49,7 @@
     "deploy": "gulp deploy",
     "lintcss": "gulp lintcss",
     "linthtml": "gulp linthtml",
-    "lintjs": "gulp lintjs",
-    "pre-commit": "lintcss, linthtml, lintjs"
+    "lintjs": "gulp lintjs"
   },
   "editorconfig-cli": [
     "*.html",
@@ -60,11 +58,6 @@
     "js/**/*.js",
     "img/**/*.svg",
     "postcss/**/*.{css,pcss}"
-  ],
-  "pre-commit": [
-    "",
-    "",
-    ""
   ],
   "engines": {
     "node": "6.10"

@@ -1,7 +1,7 @@
 # Browsers that we support
 
 # Desktop browsers
-Explorer >= 11
+Explorer >= 10
 Edge >= 12
 Safari >= 8
 last 4 Chrome versions

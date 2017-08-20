@@ -1,16 +1,7 @@
 .container {
   min-width: 768px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1200px;
 
-  background-color: #ffffff
+  background-color: white;
   box-shadow: 0 0 15px 2px #cccccc;
-}
-
-.container__block_smaller {
-  display: none;
-}
-
-.container__block__block_high {
-  color: #ffffff;
 }

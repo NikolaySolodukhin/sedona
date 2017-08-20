@@ -1,0 +1,57 @@
+.page-footer {
+  position: relative;
+
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 33px 0 35px;
+
+  text-align: center;
+
+  &__hashtag {
+    flex-basis: 33.33%;
+    align-self: center;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &__social {
+    position: relative;
+
+    flex-basis: 33.33%;
+    align-self: center;
+  }
+
+  &__copyright {
+    display: flex;
+    flex-basis: 33.3%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__developed {
+    margin-right: 10px;
+
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__copyright-link {
+    width: 113px;
+    height: 39px;
+
+    background: url("../img/spritesheet.png") no-repeat;
+    background-position: -5px -5px;
+
+    &:hover,
+    &:focus {
+      background-position: -5px -103px;
+    }
+
+    &:active {
+      background-position: -5px -54px;
+    }
+  }
+}
