@@ -60,7 +60,7 @@ gulp.task('style', function() {
         clearReportedMessages: 'true'
       })
     ]))
-    .pipe(csscomb('/.csscomb.json'))
+    .pipe(csscomb('./.csscomb.json'))
     .pipe(csso({
       restructure: true,
       sourceMap: true,

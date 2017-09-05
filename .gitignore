@@ -8,4 +8,5 @@ Thumbs.db
 *.ai
 *.pdf
 build/
-css/
+css/style.css
+style.css
