@@ -29,7 +29,7 @@ var reporter = require('postcss-reporter');
 var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');
 var sorting = require('postcss-sorting');
-
+var newer = require('gulp-newer');
 
 gulp.task('clean', function() {
   return del('build');
@@ -64,9 +64,9 @@ gulp.task('style', function() {
 
 gulp.task('style:dev', function() {
   return gulp.src('postcss/style.css')
+    .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.identityMap())
-    .pipe(plumber())
     .pipe(postcss([
       precss(),
       autoprefixer({browsers: [
@@ -133,6 +133,7 @@ gulp.task('concat:dev', function() {
 
 gulp.task('images', function() {
   return gulp.src('img/*.{png,jpg,gif}')
+    .pipe(newer('img'))
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})
@@ -152,6 +153,7 @@ gulp.task('symbols:dev', function() {
 
 gulp.task('symbols', function() {
   return gulp.src('img/icons/*.svg')
+    .pipe(newer('build/img'))
     .pipe(svgmin())
     .pipe(svgstore({
       inlineSvg: true
