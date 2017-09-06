@@ -27,6 +27,8 @@ var htmlhint = require('gulp-htmlhint');
 // var bemLinter = require('postcss-bem-linter');
 var reporter = require('postcss-reporter');
 var eslint = require('gulp-eslint');
+var sourcemaps = require('gulp-sourcemaps');
+var sorting = require('postcss-sorting');
 
 
 gulp.task('clean', function() {
@@ -34,7 +36,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('clean:dev', function() {
-  return del('js/main.js', 'img/symbols.svg');
+  return del('js/main.js', 'img/symbols.svg', 'css/style.css');
 });
 
 gulp.task('style', function() {
@@ -48,17 +50,7 @@ gulp.task('style', function() {
       autoprefixer({browsers: [
         'last 4 versions'
       ]}),
-      flexbugsFixes(),
-      doiuse({
-        ignore: ['rem'], // an optional array of features to ignore
-        ignoreFiles: ['**/normalize.css'], // an optional array of file globs to match against original source file path, to ignore
-        onFeatureUsage: function(usageInfo) {
-          console.log(usageInfo.message);
-        }
-      }),
-      reporter({
-        clearReportedMessages: 'true'
-      })
+      flexbugsFixes()
     ]))
     .pipe(csscomb('./.csscomb.json'))
     .pipe(csso({
@@ -72,6 +64,8 @@ gulp.task('style', function() {
 
 gulp.task('style:dev', function() {
   return gulp.src('postcss/style.css')
+    .pipe(sourcemaps.init())
+    .pipe(sourcemaps.identityMap())
     .pipe(plumber())
     .pipe(postcss([
       precss(),
@@ -79,6 +73,7 @@ gulp.task('style:dev', function() {
         'last 4 versions'
       ]}),
       flexbugsFixes(),
+      sorting(),
       doiuse({
         ignore: ['rem'],
         ignoreFiles: ['**/normalize.css'],
@@ -87,8 +82,9 @@ gulp.task('style:dev', function() {
         clearReportedMessages: 'true'
       })
     ]))
-    .pipe(csscomb('.csscomb.json'))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'))
+    .pipe(plumber.stop())
     .pipe(server.stream());
 });
 
@@ -199,7 +195,12 @@ gulp.task('serve', ['clean:dev', 'style:dev'], function() {
     ui: false
   });
 
-  gulp.watch('postcss/**/*.css', ['style:dev']);
+  gulp.watch('postcss/**/*.css', function() {
+    run(
+      'clean:dev',
+      ['style:dev']
+    );
+  });
   gulp.watch('*.html', ['html:update']);
 });
 
