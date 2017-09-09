@@ -1,19 +1,16 @@
 .social {
+  display: flex;
+  justify-content: center;
+
   &__link {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
 
-    display: inline-block;
-    width: 45px;
-    margin: 1px;
-    padding: 15px 0;
-    overflow: hidden;
-
-    font-size: 19px;
-    line-height: 20px;
-    vertical-align: middle;
+    font-size: 0;
     color: rgba(255, 255, 255, 1);
-    text-decoration: none;
-    text-indent: -99999px;
 
     background-color: #81b3d2;
 
@@ -28,8 +25,13 @@
       background-color: #5496bd;
     }
 
-    &:last-child {
-      font-size: 23px;
+    &:nth-child(2) {
+      margin-right: 6px;
+      margin-left: 6px;
     }
+  }
+
+  &__svg {
+    fill: white;
   }
 }

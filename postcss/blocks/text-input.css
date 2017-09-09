@@ -1,0 +1,118 @@
+.text-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  &__label {
+    display: flex;
+    width: 101px;
+    margin-right: 11px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 26px;
+    color: black;
+
+    &--center {
+      justify-content: center;
+    }
+  }
+
+  &__control {
+    position: relative;
+
+    box-sizing: border-box;
+    width: 346px;
+    padding: 5px 12px;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-family: $font-family-set;
+
+    background-color: #f2f2f2;
+    border: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      outline-width: 2px;
+      outline-color: #e5e5e5;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      color: black;
+    }
+
+    &::-moz-placeholder {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      color: black;
+    }
+
+    &:-moz-placeholder {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      color: black;
+    }
+
+    &:-ms-input-placeholder {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 26px;
+      color: black;
+    }
+
+    &--number {
+      width: 38px;
+      padding: 6px 5px;
+
+      text-align: center;
+    }
+  }
+
+  &__button {
+    width: 38px;
+    height: 38px;
+    padding: 6px 5px;
+
+    font-size: 14px;
+    color: #a9a9a9;
+
+    background-color: #f2f2f2;
+    border: none;
+
+    &:focus {
+      outline-color: #e5e5e5;
+    }
+  }
+
+  &__svg {
+    vertical-align: middle;
+
+    fill: #a9a9a9;
+
+    &:hover,
+    &:focus {
+      fill: #000000;
+    }
+
+    &:active {
+      fill: #81b3d2;
+    }
+  }
+
+  &__counter {
+    width: 114px;
+
+    font-size: 0;
+  }
+}

@@ -891,32 +891,6 @@ input[type='text']::-webkit-input-placeholder
 {
     color: #81b3d2;
 }
-.search-hotels__find
-{
-    width: 460px;
-    min-height: 58px;
-    margin-bottom: 55px;
-
-    color: #fff;
-    text-transform: uppercase;
-
-    background-color: #81b3d2;
-    border: none;
-}
-
-.search-hotels__find:hover
-{
-    background-color: #669ec0;
-    cursor: pointer;
-}
-
-.search-hotels__find:active
-{
-    color: rgba(255, 255, 255, .3);
-
-    background-color: #5496bd;
-    cursor: pointer;
-}
 
 @-webkit-keyframes slideInDown
 {

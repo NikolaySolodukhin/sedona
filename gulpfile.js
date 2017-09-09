@@ -163,7 +163,7 @@ gulp.task('symbols', function() {
 });
 
 gulp.task('svg', function() {
-  return gulp.src('img/*.svg')
+  return gulp.src('img/**/*.svg')
     .pipe(svgmin())
     .pipe(gulp.dest('img/'));
 });
