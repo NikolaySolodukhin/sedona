@@ -1,0 +1,31 @@
+.content-picture {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 42px;
+  padding-top: 78px;
+
+  text-align: center;
+
+  background: #c79a89 url("../img/bg-picture-halls.jpg") no-repeat;
+  background-size: 100% 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 100%;
+    min-height: 57px;
+
+    background: url("../img/decoration-element.png") no-repeat;
+    background-size: 100% 57px;
+    transform: translateX(-50%);
+  }
+
+  &__img {
+    align-self: center;
+    margin-bottom: 73px;
+  }
+}

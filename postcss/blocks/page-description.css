@@ -1,0 +1,22 @@
+.page-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__reason {
+    margin-top: 12px;
+    margin-bottom: 50px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+  }
+}

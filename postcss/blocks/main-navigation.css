@@ -1,0 +1,47 @@
+.main-navigation {
+  padding-right: 6%;
+  padding-left: 6%;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    width: 20%;
+    padding: 15px 0;
+
+    list-style: none;
+    font-size: 14px;
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      text-align: left;
+    }
+
+    &:nth-last-child(1),
+    &:nth-last-child(2) {
+      text-align: right;
+    }
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:visited {
+      color: #766357;
+    }
+  }
+}

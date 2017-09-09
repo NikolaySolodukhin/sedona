@@ -1,9 +1,9 @@
 .page {
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-
   margin: 0;
 
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  font-family: $font-family-set;
   text-transform: uppercase;
 }

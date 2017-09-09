@@ -1,0 +1,43 @@
+.feature {
+  display: flex;
+  width: 100%;
+
+  color: black;
+
+  background-color: white;
+
+  &__item {
+    width: 33.33%;
+
+    text-align: center;
+  }
+
+  &__description {
+    margin-bottom: 85px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 83px;
+    margin-top: 60px;
+  }
+
+  &__name {
+    margin-top: 20px;
+    margin-bottom: 24px;
+
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  &__svg {
+    fill: #81b3d2;
+  }
+}
