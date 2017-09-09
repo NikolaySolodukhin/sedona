@@ -22,12 +22,11 @@
   }
 
   &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-height: 83px;
     margin-top: 60px;
-  }
-
-  &__img {
-    text-align: сenter;
   }
 
   &__name {
@@ -36,5 +35,9 @@
 
     font-size: 21px;
     line-height: 21px;
+  }
+
+  &__svg {
+    fill: #81b3d2;
   }
 }
