@@ -38,6 +38,7 @@
     "postcss-flexbugs-fixes": "^3.0.0",
     "postcss-reporter": "^5.0.0",
     "postcss-sorting": "^3.0.1",
+    "postcss-sprites": "^4.2.1",
     "precss": "2.0.0",
     "run-sequence": "^2.1.0",
     "webpack": "^3.5.6"

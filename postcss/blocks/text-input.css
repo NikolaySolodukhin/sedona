@@ -6,6 +6,10 @@
   align-items: center;
   margin-bottom: 30px;
 
+  &--cost {
+    margin-bottom: 0;
+  }
+
   &__label {
     display: flex;
     width: 101px;
@@ -32,6 +36,10 @@
 
     background-color: #f2f2f2;
     border: none;
+
+    &--price {
+      width: initial;
+    }
 
     &:hover {
       background-color: #ebebeb;

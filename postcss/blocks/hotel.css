@@ -10,4 +10,37 @@
 
     border-bottom: 1px solid #e5e5e5;
   }
+
+  &__title {
+    margin-top: 0;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+  }
+
+  &__type {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  &__reservation {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+
+  &__description {
+    display: flex;
+    width: 75%;
+    margin-left: 30px;
+  }
 }

@@ -13,6 +13,23 @@
 
   animation: slideInDown 0.6s;
 
+  &--filter {
+    position: static;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: initial;
+    padding: 0 6%;
+
+    color: white;
+
+    background: url("../img/bg-hotels.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-shadow: none;
+    transform: none;
+  }
+
   &-container {
     position: relative;
   }
@@ -24,6 +41,22 @@
     padding: 0;
 
     border: none;
+  }
+
+  &__item {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+
+    border: none;
+  }
+
+  &__item-title {
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   &__btn {
