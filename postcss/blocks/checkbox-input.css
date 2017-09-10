@@ -4,4 +4,8 @@
     font-size: 14px;
     line-height: 21px;
   }
+
+  &__control {
+    display: none;
+  }
 }
