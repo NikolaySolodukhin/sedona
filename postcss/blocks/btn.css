@@ -14,4 +14,31 @@
     border: 2px solid white;
     border-radius: 3px;
   }
+
+  &--more {
+    box-sizing: border-box;
+    width: 111px;
+    margin-right: 6px;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+
+    text-align: center;
+
+    background-color: #81b3d2;
+  }
+
+  &--reservation {
+    margin-right: 6px;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+
+    text-align: center;
+
+    background-color: #766357;
+  }
 }
+

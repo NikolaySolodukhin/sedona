@@ -1,8 +1,41 @@
 .hotel-rating {
+  width: 25%;
+
   &__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
+    text-align: center;
     color: #666666;
+
+    background-color: #f2f2f2;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 44px;
+  }
+
+  &__item {
+    display: inline-block;
+    width: 17px;
+    height: 19px;
+    margin-right: 6px;
+
+    background-image: url("../img/sprite/icon-star.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

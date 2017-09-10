@@ -30,6 +30,9 @@ var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');
 var sorting = require('postcss-sorting');
 var newer = require('gulp-newer');
+var fs = require('fs');
+var sprites = require('postcss-sprites');
+
 
 gulp.task('clean', function() {
   return del('build');
