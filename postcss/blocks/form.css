@@ -45,14 +45,20 @@
 
   &__item {
     margin-right: 0;
+    margin-bottom: 8px;
     margin-left: 0;
     padding: 0;
 
     border: none;
+
+    &:last-child {
+      margin-left: 90px;
+    }
   }
 
   &__item-title {
-    margin-bottom: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
 
     font-weight: 700;
     font-size: 16px;
