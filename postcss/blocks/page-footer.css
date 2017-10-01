@@ -42,7 +42,7 @@
     width: 113px;
     height: 39px;
 
-    background: url("../img/ha-sprite.png") no-repeat;
+    background: url("../img/sprite/ha-sprite.png") no-repeat;
     background-position: -5px -5px;
 
     &:hover,

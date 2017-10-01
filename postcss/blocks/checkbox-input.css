@@ -19,7 +19,7 @@
       width: 22px;
       height: 22px;
 
-      background-image: url("../img/sprite/checkbox.png");
+      background-image: url("/img/sprite/checkbox.png");
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -37,7 +37,7 @@
       width: 20px;
       height: 15px;
 
-      background-image: url("../img/sprite/checkbox-tick.png");
+      background-image: url("/img/sprite/checkbox-tick.png");
       background-repeat: no-repeat;
       background-position: center;
     }

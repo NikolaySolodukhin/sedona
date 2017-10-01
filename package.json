@@ -10,7 +10,7 @@
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
     "doiuse": "^3.0.0",
-    "eslint": "4.6.1",
+    "eslint": "4.7.1",
     "eslint-config-htmlacademy": "0.3.x",
     "gulp": "3.9.1",
     "gulp-concat": "^2.6.1",
