@@ -9,8 +9,7 @@
     "browser-sync": "2.18.13",
     "css-mqpacker": "^6.0.1",
     "del": "^3.0.0",
-    "doiuse": "^3.0.0",
-    "eslint": "4.6.1",
+    "eslint": "4.7.1",
     "eslint-config-htmlacademy": "0.3.x",
     "gulp": "3.9.1",
     "gulp-concat": "^2.6.1",
@@ -38,8 +37,10 @@
     "postcss-flexbugs-fixes": "^3.0.0",
     "postcss-reporter": "^5.0.0",
     "postcss-sorting": "^3.0.1",
+    "postcss-sprites": "^4.2.1",
     "precss": "2.0.0",
     "run-sequence": "^2.1.0",
+    "stylelint-order": "^0.7.0",
     "webpack": "^3.5.6"
   },
   "scripts": {

@@ -30,6 +30,7 @@ var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');
 var sorting = require('postcss-sorting');
 var newer = require('gulp-newer');
+var sprites = require('postcss-sprites');
 
 gulp.task('clean', function() {
   return del('build');
@@ -40,6 +41,10 @@ gulp.task('clean:dev', function() {
 });
 
 gulp.task('style', function() {
+  var opts = {
+    stylesheetPath: './build/css',
+    spritePath: './build/img/',
+  };
   return gulp.src('postcss/style.css')
     .pipe(plumber())
     .pipe(postcss([
@@ -50,7 +55,8 @@ gulp.task('style', function() {
       autoprefixer({browsers: [
         'last 4 versions'
       ]}),
-      flexbugsFixes()
+      flexbugsFixes(),
+      sprites(opts)
     ]))
     .pipe(csscomb('./.csscomb.json'))
     .pipe(csso({
@@ -63,25 +69,35 @@ gulp.task('style', function() {
 });
 
 gulp.task('style:dev', function() {
+  var opts = {
+    stylesheetPath: './css',
+    spritePath: './img/sprite/',
+    filterBy: function(image) {
+      if (!/\/img\/sprite\//.test(image.url)) {
+        return Promise.reject();
+      }
+      return Promise.resolve();
+    }
+  };
+  var processors = [
+    precss(),
+    autoprefixer({
+      browsers: [
+        'last 4 versions'
+      ]
+    }),
+    flexbugsFixes(),
+    sorting(),
+    reporter({
+      clearReportedMessages: 'true'
+    }),
+    sprites(opts)
+  ];
   return gulp.src('postcss/style.css')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sourcemaps.identityMap())
-    .pipe(postcss([
-      precss(),
-      autoprefixer({browsers: [
-        'last 4 versions'
-      ]}),
-      flexbugsFixes(),
-      sorting(),
-      doiuse({
-        ignore: ['rem'],
-        ignoreFiles: ['**/normalize.css'],
-      }),
-      reporter({
-        clearReportedMessages: 'true'
-      })
-    ]))
+    .pipe(postcss(processors))
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('css'))
     .pipe(plumber.stop())
@@ -133,7 +149,7 @@ gulp.task('concat:dev', function() {
 
 gulp.task('images', function() {
   return gulp.src('img/*.{png,jpg,gif}')
-    .pipe(newer('img'))
+    .pipe(newer('img/'))
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true})

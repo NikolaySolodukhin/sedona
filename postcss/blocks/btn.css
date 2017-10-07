@@ -1,0 +1,70 @@
+.btn {
+  font-family: $font-family-set;
+  text-align: center;
+  cursor: pointer;
+
+  &--transparent {
+    display: block;
+    width: 136px;
+    margin: 0 auto;
+    padding: 3px 0;
+    font-weight: 700;
+
+    font-size: 14px;
+    line-height: 26px;
+    color: white;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 3px;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
+  }
+
+  &--more {
+    box-sizing: border-box;
+    width: 111px;
+    margin-right: 6px;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+
+    background-color: #81b3d2;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+    }
+  }
+
+  &--reservation {
+    margin-right: 6px;
+    padding-top: 3px;
+    padding-right: 16px;
+    padding-bottom: 3px;
+    padding-left: 16px;
+
+    background-color: #766357;
+
+    &:hover {
+      background-color: #604e43;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #503e33;
+    }
+  }
+}
+

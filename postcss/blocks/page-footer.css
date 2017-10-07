@@ -42,16 +42,15 @@
     width: 113px;
     height: 39px;
 
-    background: url("../img/ha-sprite.png") no-repeat;
-    background-position: -5px -5px;
+    background: url("../img/sprite/ha-logo.png") no-repeat;
 
     &:hover,
     &:focus {
-      background-position: -5px -103px;
+      background: url("../img/sprite/ha-logo-hover.png") no-repeat;
     }
 
     &:active {
-      background-position: -5px -54px;
+      background: url("../img/sprite/ha-logo-active.png") no-repeat;
     }
   }
 }

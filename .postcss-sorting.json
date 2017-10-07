@@ -21,21 +21,14 @@
         "at-rules",
         "rules"
     ],
-    "properties-order": [{
-            "emptyLineBefore": true,
-            "properties": [
+    "properties-order": [
                 "content",
                 "position",
                 "top",
                 "right",
                 "bottom",
                 "left",
-                "z-index"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
+                "z-index",
                 "display",
                 "-webkit-flex",
                 "-ms-flex",
@@ -91,12 +84,7 @@
                 "-ms-overflow-y",
                 "overflow-y",
                 "-webkit-overflow-scrolling",
-                "-ms-overflow-style"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
+                "-ms-overflow-style",
                 "list-style",
                 "list-style-position",
                 "list-style-type",
@@ -176,12 +164,7 @@
                 "page-break-after",
                 "page-break-before",
                 "page-break-inside",
-                "src"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
+                "src",
                 "background",
                 "background-color",
                 "background-image",
@@ -296,12 +279,7 @@
                 "opacity",
                 "-webkit-filter",
                 "filter",
-                "backdrop-filter"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
+                "backdrop-filter",
                 "-webkit-transition",
                 "-moz-transition",
                 "-ms-transition",
@@ -371,12 +349,7 @@
                 "-moz-animation-fill-mode",
                 "-ms-animation-fill-mode",
                 "-o-animation-fill-mode",
-                "animation-fill-mode"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
+                "animation-fill-mode",
                 "appearance",
                 "clip",
                 "clip-path",
@@ -397,18 +370,11 @@
                 "quotes",
                 "touch-action",
                 "will-change",
-                "zoom"
-            ]
-        },
-        {
-            "emptyLineBefore": true,
-            "properties": [
-              "fill",
-              "fill-rule",
-              "clip-rule",
-              "stroke"
-            ]
-        }
-    ],
+                "zoom",
+                "fill",
+                "fill-rule",
+                "clip-rule",
+                "stroke"
+              ],
     "unspecified-properties-position": "bottom"
 }

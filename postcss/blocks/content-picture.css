@@ -7,7 +7,7 @@
 
   text-align: center;
 
-  background: #c79a89 url("../img/bg-picture-halls.jpg") no-repeat;
+  background: #647888 url("../img/bg-picture-halls.jpg") no-repeat;
   background-size: 100% 100%;
 
   &::after {
@@ -19,7 +19,7 @@
     width: 100%;
     min-height: 57px;
 
-    background: url("../img/decoration-element.png") no-repeat;
+    background: url("/img/decoration-element.png") no-repeat;
     background-size: 100% 57px;
     transform: translateX(-50%);
   }

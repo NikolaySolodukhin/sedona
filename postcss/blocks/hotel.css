@@ -5,9 +5,76 @@
   &__item {
     display: flex;
     align-items: flex-start;
-    margin-bottom: 2px;
-    padding: 28px 6%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 6%;
 
     border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__title {
+    margin-top: -5px;
+    margin-bottom: 8px;
+
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  &__link {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 13px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+  }
+
+  &__name {
+    width: 111px;
+    margin-top: 0;
+    margin-right: 6px;
+    margin-bottom: 0;
+  }
+
+  &__cost {
+    width: 111px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    text-align: left;
+  }
+
+  &__reservation {
+    display: flex;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 30px;
   }
 }
