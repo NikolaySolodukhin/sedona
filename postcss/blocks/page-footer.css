@@ -12,8 +12,8 @@
     flex-basis: 33.33%;
     align-self: center;
 
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
   }
 
@@ -34,8 +34,7 @@
   &__developed {
     margin-right: 10px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
   }
 
   &__copyright-link {

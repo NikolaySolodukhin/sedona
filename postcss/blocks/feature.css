@@ -15,8 +15,7 @@
   &__description {
     margin-bottom: 85px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     line-height: 21px;
     color: #333333;
   }
@@ -33,11 +32,11 @@
     margin-top: 20px;
     margin-bottom: 24px;
 
-    font-size: 21px;
+    @mixin second-text;
     line-height: 21px;
   }
 
   &__svg {
-    fill: #81b3d2;
+    fill: $main-color-blue;
   }
 }

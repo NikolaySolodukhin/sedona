@@ -2,3 +2,9 @@ $font-family-set: "Pt Sans", "Arial", sans-serif;
 
 @custom-media --tablet-width (min-width: 768px);
 @custom-media --desktop-width (min-width: 1100px);
+
+$main-color-blue: #81b3d2;
+$main-color-blue-hover: #669ec0;
+$main-color-blue-active: #5496bd;
+$bgcolor-header-picture: #647888;
+$bgcolor-map-picture: #e0edbc;

@@ -17,8 +17,8 @@
     margin-top: -5px;
     margin-bottom: 8px;
 
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
   }
 
@@ -27,7 +27,7 @@
     text-decoration: none;
 
     &:hover {
-      color: #81b3d2;
+      color: $main-color-blue;
     }
 
     &:focus,
@@ -41,8 +41,7 @@
     align-items: center;
     margin-bottom: 13px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     line-height: 21px;
     color: #333333;
   }
@@ -65,8 +64,8 @@
   &__reservation {
     display: flex;
 
+    @mixin third-text;
     font-weight: 700;
-    font-size: 14px;
     line-height: 21px;
     color: white;
   }

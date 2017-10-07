@@ -10,8 +10,8 @@
   }
 
   &__title {
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
   }
 
@@ -40,15 +40,15 @@
 
   &__link {
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dashed $main-color-blue;
     text-decoration: none;
 
     &:hover {
-      color: #81b3d2;
+      color: $main-color-blue;
     }
 
     &--active {
-      color: #81b3d2;
+      color: $main-color-blue;
       border-bottom: none;
     }
   }

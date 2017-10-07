@@ -13,12 +13,11 @@
   &__item {
     width: 33.34%;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     text-align: center;
     color: white;
 
-    background-color: #81b3d2;
+    background-color: $main-color-blue;
 
     &--white {
       color: black;
@@ -30,8 +29,8 @@
   &__name {
     margin-top: 55px;
 
+    @mixin third-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 21px;
   }
 
@@ -39,8 +38,7 @@
     margin-top: 20px;
     padding-left: 5px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     line-height: 21px;
   }
 
