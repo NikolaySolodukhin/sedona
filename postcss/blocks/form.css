@@ -74,8 +74,8 @@
     width: 460px;
     min-height: 58px;
 
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
     font-family: $font-family-set;
     color: white;
@@ -85,14 +85,14 @@
     border: none;
 
     &:hover {
-      background-color: #669ec0;
+      background-color: $main-color-blue-hover;
       cursor: pointer;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
 
-      background-color: #5496bd;
+      background-color: $main-color-blue-active;
       cursor: pointer;
     }
   }

@@ -8,9 +8,9 @@
     width: 136px;
     margin: 0 auto;
     padding: 3px 0;
-    font-weight: 700;
 
-    font-size: 14px;
+    @mixin third-text;
+    font-weight: 700;
     line-height: 26px;
     color: white;
     text-transform: uppercase;
@@ -37,13 +37,13 @@
     background-color: $main-color-blue;
 
     &:hover {
-      background-color: #669ec0;
+      background-color: $main-color-blue-hover;
     }
 
     &:focus,
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      background-color: #5496bd;
+      background-color: $main-color-blue-active;
     }
   }
 

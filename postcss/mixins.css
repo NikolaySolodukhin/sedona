@@ -1,5 +1,9 @@
-@define-mixin main-text {
+@define-mixin second-text {
   font-weight: 400;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 21px;
+}
+
+@define-mixin third-text {
+  font-weight: 400;
+  font-size: 14px;
 }

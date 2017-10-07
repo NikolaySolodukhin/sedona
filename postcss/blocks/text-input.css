@@ -16,8 +16,8 @@
     width: 101px;
     margin-right: 11px;
 
+    @mixin third-text;
     font-weight: 700;
-    font-size: 14px;
     line-height: 26px;
     color: black;
 
@@ -52,7 +52,7 @@
     width: 346px;
     padding: 5px 12px;
 
-    font-size: 14px;
+    @mixin third-text;
     line-height: 26px;
     font-family: $font-family-set;
 
@@ -85,29 +85,29 @@
     }
 
     &::-webkit-input-placeholder {
+      @mixin third-text;
       font-weight: 700;
-      font-size: 14px;
       line-height: 26px;
       color: black;
     }
 
     &::-moz-placeholder {
+      @mixin third-text;
       font-weight: 700;
-      font-size: 14px;
       line-height: 26px;
       color: black;
     }
 
     &:-moz-placeholder {
+      @mixin third-text;
       font-weight: 700;
-      font-size: 14px;
       line-height: 26px;
       color: black;
     }
 
     &:-ms-input-placeholder {
+      @mixin third-text;
       font-weight: 700;
-      font-size: 14px;
       line-height: 26px;
       color: black;
     }
@@ -125,7 +125,7 @@
     height: 38px;
     padding: 6px 5px;
 
-    font-size: 14px;
+    @mixin third-text;
     color: #a9a9a9;
 
     background-color: #f2f2f2;

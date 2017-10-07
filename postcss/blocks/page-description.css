@@ -4,8 +4,8 @@
   justify-content: center;
 
   &__title {
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
     text-align: center;
   }
@@ -14,8 +14,7 @@
     margin-top: 12px;
     margin-bottom: 50px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     line-height: 26px;
     text-align: center;
   }

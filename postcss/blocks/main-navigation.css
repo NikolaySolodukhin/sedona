@@ -14,7 +14,7 @@
     padding: 15px 0;
 
     list-style: none;
-    font-size: 14px;
+    @mixin third-text;
 
     &:nth-child(1),
     &:nth-child(2) {

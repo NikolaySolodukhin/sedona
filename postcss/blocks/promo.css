@@ -17,8 +17,7 @@
   &__description {
     margin-bottom: 45px;
 
-    font-weight: 400;
-    font-size: 14px;
+    @mixin third-text;
     color: #333333;
   }
 
@@ -29,8 +28,8 @@
     min-height: 85px;
     padding: 0;
 
+    @mixin second-text;
     font-weight: bold;
-    font-size: 21px;
     line-height: 26px;
     font-family: $font-family-set;
     color: white;

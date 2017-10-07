@@ -10,8 +10,8 @@
   }
 
   &__title {
+    @mixin second-text;
     font-weight: 700;
-    font-size: 21px;
     line-height: 26px;
   }
 

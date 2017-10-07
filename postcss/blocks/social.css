@@ -16,13 +16,13 @@
 
     &:hover,
     &:focus {
-      background-color: #669ec0;
+      background-color: $main-color-blue-hover;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
 
-      background-color: #5496bd;
+      background-color: $main-color-blue-hover;
     }
 
     &:nth-child(2) {
