@@ -46,59 +46,66 @@
 
     <main class="page-main">
       <form class="form form--filter" method="post">
+        <section class="form__list">
+          <fieldset class="form__item">
+            <h2 class="form__item-title">Инфраструктура:</h2>
 
-        <fieldset class="form__item">
-          <h2 class="form__item-title">Инфраструктура:</h2>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="pool-check" value="pool" id="pool-check" checked>
+              <label class="checkbox-input__label" for="pool-check">Бассейн</label>
+            </section>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="pool-check" value="pool" id="pool-check" checked>
-            <label class="checkbox-input__label" for="pool-check">Бассейн</label>
-          </section>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="park-check" value="parking" id="park-check">
+              <label class="checkbox-input__label" for="park-check">Парковка</label>
+            </section>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="park-check" value="parking" id="park-check">
-            <label class="checkbox-input__label" for="park-check">Парковка</label>
-          </section>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="wifi-check" value="wi-fi" id="wifi-check">
+              <label class="checkbox-input__label" for="wifi-check">Wi-fi</label>
+            </section>
+          </fieldset>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="wifi-check" value="wi-fi" id="wifi-check">
-            <label class="checkbox-input__label" for="wifi-check">Wi-fi</label>
-          </section>
-        </fieldset>
+          <fieldset class="form__item">
+            <h2 class="form__item-title">Тип жилья:</h2>
 
-        <fieldset class="form__item">
-          <h2 class="form__item-title">Тип жилья:</h2>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="hotel-check" value="hotel" id="hotel-check" checked>
+              <label class="checkbox-input__label" for="hotel-check">Гостиница</label>
+            </section>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="hotel-check" value="hotel" id="hotel-check" checked>
-            <label class="checkbox-input__label" for="hotel-check">Гостиница</label>
-          </section>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="motel-check" value="motel" id="motel-check" checked>
+              <label class="checkbox-input__label" for="motel-check">Мотель</label>
+            </section>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="motel-check" value="motel" id="motel-check" checked>
-            <label class="checkbox-input__label" for="motel-check">Мотель</label>
-          </section>
+            <section class="checkbox-input">
+              <input class="checkbox-input__control" type="checkbox" name="apartment-check" value="apartment" id="apartment-check" checked>
+              <label class="checkbox-input__label" for="apartment-check">Апартаменты</label>
+            </section>
 
-          <section class="checkbox-input">
-            <input class="checkbox-input__control" type="checkbox" name="apartment-check" value="apartment" id="apartment-check" checked>
-            <label class="checkbox-input__label" for="apartment-check">Апартаменты</label>
-          </section>
-
-        </fieldset>
+          </fieldset>
+      </section>
 
         <div class="filter">
           <h2 class="filter__title">Стоимость в сутки (р):</h2>
-          <section class="text-input text-input--cost">
-            <label class="text-input__label text-input__label--min">от</label>
-            <input class="text-input__control text-input__control--price" type="text" name="min-price" value="0">
-          </section>
-          <section class="text-input text-input--cost">
-            <label class="text-input__label text-input__label--max">до</label>
-            <input class="text-input__control text-input__control--price" type="text" name="max-price" value="3000">
-          </section>
-          <div class="control">
-            <div class="control__toggle control__toggle--min"></div>
-            <div class="control__toggle control__toggle--max"></div>
+          <div class="filter__wrapper">
+            <div class="filter__control">
+              <section class="text-input text-input--cost">
+                <label class="text-input__label text-input__label--min">от
+                   <input class="text-input__control text-input__control--price" name="min-price" type="text" value="0">
+                </label>
+              </section>
+              <section class="text-input text-input--cost">
+                <label class="text-input__label text-input__label--max">до
+                  <input class="text-input__control text-input__control--price" name="max-price" type="text" value="3000">
+                </label>
+              </section>
+            </div>
+            <div class="control">
+              <div class="control__toggle control__toggle--min"></div>
+              <div class="control__toggle control__toggle--max"></div>
+            </div>
           </div>
           <button class="btn btn--transparent" type="submit">Показать</button>
         </div>

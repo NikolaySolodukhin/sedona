@@ -1,8 +1,14 @@
 .btn {
+  font-family: $font-family-set;
+  text-align: center;
+  cursor: pointer;
+
   &--transparent {
-    width: 133px;
-    margin-left: 1px;
+    display: block;
+    width: 136px;
+    margin: 0 auto;
     padding: 3px 0;
+    font-weight: 700;
 
     font-size: 14px;
     line-height: 26px;
@@ -12,6 +18,11 @@
     background-color: transparent;
     border: 2px solid white;
     border-radius: 3px;
+
+    &:hover {
+      color: black;
+      background-color: white;
+    }
   }
 
   &--more {
@@ -23,9 +34,17 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    text-align: center;
-
     background-color: #81b3d2;
+
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #5496bd;
+    }
   }
 
   &--reservation {
@@ -35,9 +54,17 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    text-align: center;
-
     background-color: #766357;
+
+    &:hover {
+      background-color: #604e43;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #503e33;
+    }
   }
 }
 

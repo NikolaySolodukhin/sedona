@@ -7,6 +7,7 @@
   margin-bottom: 30px;
 
   &--cost {
+    display: inline-flex;
     margin-bottom: 0;
   }
 
@@ -23,6 +24,27 @@
     &--center {
       justify-content: center;
     }
+
+    &--min,
+    &--max {
+      justify-content: flex-end;
+      align-items: center;
+      width: 99px;
+      color: white;
+      font-weight: 400;
+    }
+
+    &--min {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 5px;
+        right: -1px;
+        width: 2px;
+        height: 22px;
+        background: white;
+      }
+    }
   }
 
   &__control {
@@ -37,10 +59,6 @@
     background-color: #f2f2f2;
     border: none;
 
-    &--price {
-      width: initial;
-    }
-
     &:hover {
       background-color: #ebebeb;
     }
@@ -49,6 +67,21 @@
       background-color: #ffffff;
       outline-width: 2px;
       outline-color: #e5e5e5;
+    }
+
+    &--price {
+      width: 55px;
+      color: white;
+      background-color: transparent;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:focus {
+        outline: none;
+        background-color: transparent;
+      }
     }
 
     &::-webkit-input-placeholder {

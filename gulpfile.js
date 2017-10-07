@@ -88,10 +88,6 @@ gulp.task('style:dev', function() {
     }),
     flexbugsFixes(),
     sorting(),
-    doiuse({
-      ignore: ['rem'],
-      ignoreFiles: ['**/normalize.css'],
-    }),
     reporter({
       clearReportedMessages: 'true'
     }),
