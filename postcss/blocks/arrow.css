@@ -33,7 +33,7 @@
 
       &:active {
         &::before {
-          border-top: 9px solid #81b3d2;
+          border-top: 9px solid $main-color-blue;
         }
       }
     }
@@ -42,7 +42,7 @@
       &::before {
         top: 1px;
         left: -1px;
-        border-top: 9px solid #81b3d2;
+        border-top: 9px solid $main-color-blue;
       }
     }
   }

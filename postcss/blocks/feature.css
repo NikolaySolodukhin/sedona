@@ -38,6 +38,6 @@
   }
 
   &__svg {
-    fill: #81b3d2;
+    fill: $main-color-blue;
   }
 }

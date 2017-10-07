@@ -64,7 +64,7 @@
     }
 
     &:focus {
-      background-color: #ffffff;
+      background-color: white;
       outline-width: 2px;
       outline-color: #e5e5e5;
     }
@@ -143,11 +143,11 @@
 
     &:hover,
     &:focus {
-      fill: #000000;
+      fill: black;
     }
 
     &:active {
-      fill: #81b3d2;
+      fill: $main-color-blue;
     }
 
     &--calendar {

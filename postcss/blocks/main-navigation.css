@@ -33,7 +33,7 @@
 
     &:hover,
     &:focus {
-      color: #81b3d2;
+      color: $main-color-blue;
     }
 
     &:active {

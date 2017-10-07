@@ -18,7 +18,7 @@
     text-align: center;
     color: white;
 
-    background-color: #81b3d2;
+    background-color: $main-color-blue;
 
     &--white {
       color: black;

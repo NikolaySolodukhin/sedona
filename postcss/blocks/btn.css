@@ -34,7 +34,7 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    background-color: #81b3d2;
+    background-color: $main-color-blue;
 
     &:hover {
       background-color: #669ec0;

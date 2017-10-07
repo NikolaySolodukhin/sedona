@@ -7,7 +7,7 @@
   width: 570px;
   padding: 55px;
 
-  background: #ffffff;
+  background: white;
   box-shadow: 0 11px 20px 3px rgba(50, 50, 50, 0.38);
   transform: translateX(-50%);
 
@@ -81,7 +81,7 @@
     color: white;
     text-transform: uppercase;
 
-    background-color: #81b3d2;
+    background-color: $main-color-blue;
     border: none;
 
     &:hover {
