@@ -33,6 +33,7 @@
     margin-bottom: 24px;
 
     @mixin second-text;
+    font-weight: 700;
     line-height: 21px;
   }
 
