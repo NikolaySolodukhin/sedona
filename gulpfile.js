@@ -21,10 +21,8 @@ var uglify = require('gulp-uglify');
 var ghPages = require('gulp-gh-pages');
 var server = require('browser-sync').create();
 var flexbugsFixes = require('postcss-flexbugs-fixes');
-var doiuse = require('doiuse');
 var stylelint = require('gulp-stylelint');
 var htmlhint = require('gulp-htmlhint');
-// var bemLinter = require('postcss-bem-linter');
 var reporter = require('postcss-reporter');
 var eslint = require('gulp-eslint');
 var sourcemaps = require('gulp-sourcemaps');
@@ -42,8 +40,14 @@ gulp.task('clean:dev', function() {
 
 gulp.task('style', function() {
   var opts = {
-    stylesheetPath: './build/css',
-    spritePath: './build/img/',
+    stylesheetPath: 'build/css',
+    spritePath: 'build/img/',
+    filterBy: function(image) {
+      if (!/\/img\/sprite\//.test(image.url)) {
+        return Promise.reject();
+      }
+      return Promise.resolve();
+    }
   };
   return gulp.src('postcss/style.css')
     .pipe(plumber())
@@ -225,7 +229,7 @@ gulp.task('serve', ['clean:dev', 'style:dev'], function() {
 gulp.task('build', function(fn) {
   run(
     'clean',
-    ['copy', 'style', 'htmlminify', 'jsmin'],
+    ['copy', 'style', 'symbols', 'htmlminify', 'jsmin'],
     fn
   );
 });
