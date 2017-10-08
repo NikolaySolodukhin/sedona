@@ -138,7 +138,7 @@ gulp.task('htmlminify', function() {
 });
 
 gulp.task('jsmin', function() {
-  return gulp.src(['js/utils.js'])
+  return gulp.src(['js/main.js'])
     .pipe(uglify())
     .pipe(gzip())
     .pipe(gulp.dest('build/js'));
