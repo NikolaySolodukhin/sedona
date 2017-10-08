@@ -35,7 +35,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('clean:dev', function() {
-  return del('js/main.js', 'img/symbols.svg', 'css/style.css');
+  return del('img/symbols.svg', 'css/style.css');
 });
 
 gulp.task('style', function() {
@@ -68,7 +68,6 @@ gulp.task('style', function() {
       sourceMap: true,
       debug: true
     }))
-    .pipe(gzip())
     .pipe(gulp.dest('build/css'));
 });
 
@@ -133,14 +132,12 @@ gulp.task('lintjs', function() {
 gulp.task('htmlminify', function() {
   return gulp.src('*.html')
     .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gzip())
     .pipe(gulp.dest('build/'));
 });
 
 gulp.task('jsmin', function() {
   return gulp.src(['js/main.js'])
     .pipe(uglify())
-    .pipe(gzip())
     .pipe(gulp.dest('build/js'));
 });
 

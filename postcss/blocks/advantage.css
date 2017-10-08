@@ -11,9 +11,8 @@
   }
 
   &__item {
-    width: 33.34%;
-
     @mixin third-text;
+    width: 33.34%;
     text-align: center;
     color: white;
 
@@ -21,24 +20,22 @@
 
     &--white {
       color: black;
-
       background-color: #eeeeee;
     }
   }
 
   &__name {
+    @mixin second-text;
     margin-top: 55px;
-
-    @mixin third-text;
     font-weight: 700;
     line-height: 21px;
   }
 
   &__description {
-    margin-top: 20px;
-    padding-left: 5px;
-
     @mixin third-text;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    padding-left: 5px;
     line-height: 21px;
   }
 
