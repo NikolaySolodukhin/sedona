@@ -2,6 +2,7 @@
   position: absolute;
   top: 0;
   left: 50%;
+  z-index: 1;
 
   box-sizing: border-box;
   width: 570px;
@@ -27,6 +28,10 @@
     background-size: 100% 100%;
     box-shadow: none;
     transform: none;
+  }
+
+  &--hidden {
+    display: none;
   }
 
   &-container {
@@ -71,10 +76,9 @@
   }
 
   &__btn {
+    @mixin second-text;
     width: 460px;
     min-height: 58px;
-
-    @mixin second-text;
     font-weight: 700;
     line-height: 26px;
     font-family: $font-family-set;
