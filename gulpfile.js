@@ -11,7 +11,6 @@ var svgmin = require('gulp-svgmin');
 var autoprefixer = require('autoprefixer');
 var mqpacker = require('css-mqpacker');
 var csso = require('gulp-csso');
-var gzip = require('gulp-gzip');
 var imagemin = require('gulp-imagemin');
 var htmlmin = require('gulp-html-minifier2');
 var concat = require('gulp-concat');
