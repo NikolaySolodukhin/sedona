@@ -32,7 +32,7 @@
 
     &:focus,
     &:active {
-      color: rgba(0, 0, 0, 0.3);
+      color: $black-color-with-opacity;
     }
   }
 
@@ -43,7 +43,7 @@
 
     @mixin third-text;
     line-height: 21px;
-    color: #333333;
+    color: $black-light-color;
   }
 
   &__name {

@@ -37,11 +37,11 @@
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
+      color: $black-color-with-opacity;
     }
 
     &:visited {
-      color: #766357;
+      color: $brown-color-button;
     }
   }
 }

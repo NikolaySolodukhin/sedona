@@ -17,7 +17,7 @@
 
     @mixin third-text;
     line-height: 21px;
-    color: #333333;
+    color: $black-light-color;
   }
 
   &__icon {

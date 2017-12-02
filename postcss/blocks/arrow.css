@@ -6,7 +6,7 @@
     position: relative;
     width: 10px;
     height: 11px;
-    color: #cccccc;
+    color: $grey-light-color;
 
     &--up,
     &--down {
@@ -14,7 +14,7 @@
         content: "";
         position: absolute;
         border: 6px solid transparent;
-        border-top: 9px solid #cccccc;
+        border-top: 9px solid $grey-light-color;
       }
     }
 

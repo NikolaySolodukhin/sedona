@@ -5,5 +5,5 @@
   margin-left: auto;
 
   background-color: white;
-  box-shadow: 0 0 15px 2px #cccccc;
+  box-shadow: 0 0 15px 2px $grey-light-color;
 }
