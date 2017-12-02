@@ -39,7 +39,7 @@
   }
 
   &__link {
-    color: rgba(0, 0, 0, 0.3);
+    color: $black-color-with-opacity;
     border-bottom: 1px dashed $main-color-blue;
     text-decoration: none;
 

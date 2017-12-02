@@ -54,7 +54,7 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    background-color: #766357;
+    background-color: $brown-color-button;
 
     &:hover {
       background-color: #604e43;

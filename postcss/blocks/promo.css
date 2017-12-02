@@ -18,7 +18,7 @@
     margin-bottom: 45px;
 
     @mixin third-text;
-    color: #333333;
+    color: $black-light-color;
   }
 
   &__search {
@@ -35,7 +35,7 @@
     color: white;
     text-transform: uppercase;
 
-    background-color: #766357;
+    background-color: $brown-color-button;
     border: none;
     cursor: pointer;
   }
