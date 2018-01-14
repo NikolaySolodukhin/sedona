@@ -1,9 +1,0 @@
-.page {
-  margin: 0;
-
-  @mixin second-text;
-  font-weight: 700;
-  line-height: 26px;
-  font-family: $font-family-set;
-  text-transform: uppercase;
-}
