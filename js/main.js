@@ -1,6 +1,9 @@
 'use strict';
 
-window.utils = (function() {
+import './picture-fill'
+import './svg-use-polyfill'
+
+(function() {
   var buttonChoose = document.querySelector('.promo__search');
   var form = document.querySelector('.form');
   form.classList.add('form--hidden');
@@ -30,3 +33,4 @@ ymaps.ready(function() {
 
   myMap.geoObjects.add(myPlacemark);
 });
+

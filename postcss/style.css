@@ -9,14 +9,12 @@
 @import "blocks/main-navigation.css";
 
 /*index.html*/
-@import "blocks/page-main.css";
 @import "blocks/content-picture.css";
 @import "blocks/page-description.css";
 @import "blocks/advantage.css";
 @import "blocks/feature.css";
 @import "blocks/other-advantages.css";
 @import "blocks/promo.css";
-@import "blocks/form-container.css";
 @import "blocks/form.css";
 @import "blocks/btn.css";
 @import "blocks/map.css";

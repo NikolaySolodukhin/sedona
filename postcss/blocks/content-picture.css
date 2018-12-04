@@ -7,7 +7,9 @@
 
   text-align: center;
 
-  background: $bgcolor-header-picture url("../img/bg-picture-halls.jpg") no-repeat;
+  background-color: var(--bgcolor-header-picture);
+  background-image: url("../img/bg-picture-halls.jpg");
+  background-repeat: no-repeat;
   background-size: 100% 100%;
 
   &::after {
@@ -19,7 +21,8 @@
     width: 100%;
     min-height: 57px;
 
-    background: url("/img/decoration-element.png") no-repeat;
+    background-image: url("/img/decoration-element.png");
+    background-repeat: no-repeat;
     background-size: 100% 57px;
     transform: translateX(-50%);
   }

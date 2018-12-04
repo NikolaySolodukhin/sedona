@@ -17,7 +17,7 @@
 
     @mixin third-text;
     line-height: 21px;
-    color: $black-light-color;
+    color: var(--black-light-color);
   }
 
   &__icon {
@@ -38,6 +38,6 @@
   }
 
   &__svg {
-    fill: $main-color-blue;
+    fill: var(--main-color-blue);
   }
 }

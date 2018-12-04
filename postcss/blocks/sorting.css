@@ -39,16 +39,16 @@
   }
 
   &__link {
-    color: $black-color-with-opacity;
-    border-bottom: 1px dashed $main-color-blue;
+    color: var(--black-color-with-opacity);
+    border-bottom: 1px dashed var(--main-color-blue);
     text-decoration: none;
 
     &:hover {
-      color: $main-color-blue;
+      color: var(--main-color-blue);
     }
 
     &--active {
-      color: $main-color-blue;
+      color: var(--main-color-blue);
       border-bottom: none;
     }
   }

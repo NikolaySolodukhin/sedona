@@ -27,12 +27,12 @@
     text-decoration: none;
 
     &:hover {
-      color: $main-color-blue;
+      color: var(--main-color-blue);
     }
 
     &:focus,
     &:active {
-      color: $black-color-with-opacity;
+      color: var(--black-color-with-opacity);
     }
   }
 
@@ -43,7 +43,7 @@
 
     @mixin third-text;
     line-height: 21px;
-    color: $black-light-color;
+    color: var(--black-light-color);
   }
 
   &__name {

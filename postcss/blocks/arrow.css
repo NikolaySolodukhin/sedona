@@ -6,7 +6,7 @@
     position: relative;
     width: 10px;
     height: 11px;
-    color: $grey-light-color;
+    color: var(--grey-light-color);
 
     &--up,
     &--down {
@@ -16,7 +16,7 @@
         border-left: 6px solid transparent;
         border-bottom: 6px solid transparent;
         border-right: 6px solid transparent;
-        border-top: 9px solid $grey-light-color;
+        border-top: 9px solid var(--grey-light-color);
       }
     }
 
@@ -35,7 +35,7 @@
 
       &:active {
         &::before {
-          border-top: 9px solid $main-color-blue;
+          border-top: 9px solid var(--main-color-blue);
         }
       }
     }
@@ -44,7 +44,7 @@
       &::before {
         top: 1px;
         left: -1px;
-        border-top: 9px solid $main-color-blue;
+        border-top: 9px solid var(--main-color-blue);
       }
     }
   }

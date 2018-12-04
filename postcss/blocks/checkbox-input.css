@@ -18,9 +18,11 @@
 
       width: 22px;
       height: 22px;
-      background-image: url("/img/sprite/checkbox.png");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-position: -113px -39px;
+      background-size: 226px 78px;
     }
   }
 
@@ -36,9 +38,11 @@
       width: 20px;
       height: 15px;
 
-      background-image: url("/img/sprite/checkbox-tick.png");
+      background-image: url("../img/sprite.png");
       background-repeat: no-repeat;
       background-position: center;
+      background-position: -135px -39px;
+      background-size: 226px 78px;
     }
   }
 }

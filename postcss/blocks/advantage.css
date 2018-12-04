@@ -16,7 +16,7 @@
     text-align: center;
     color: white;
 
-    background-color: $main-color-blue;
+    background-color: var(--main-color-blue);
 
     &--white {
       color: black;

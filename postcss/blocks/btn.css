@@ -1,5 +1,5 @@
 .btn {
-  font-family: $font-family-set;
+  font-family: var(--font-family-set);
   text-align: center;
   cursor: pointer;
 
@@ -34,16 +34,16 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    background-color: $main-color-blue;
+    background-color: var(--main-color-blue);
 
     &:hover {
-      background-color: $main-color-blue-hover;
+      background-color: var(--main-color-blue-hover);
     }
 
     &:focus,
     &:active {
       color: rgba(255, 255, 255, 0.3);
-      background-color: $main-color-blue-active;
+      background-color: var(--main-color-blue-active);
     }
   }
 
@@ -54,7 +54,7 @@
     padding-bottom: 3px;
     padding-left: 16px;
 
-    background-color: $brown-color-button;
+    background-color: var(--brown-color-button);
 
     &:hover {
       background-color: #604e43;

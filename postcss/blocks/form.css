@@ -24,7 +24,8 @@
 
     color: white;
 
-    background: url("/img/bg-hotels.jpg") no-repeat;
+    background-image: url("../img/bg-hotels.jpg");
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     box-shadow: none;
     transform: none;
@@ -81,22 +82,22 @@
     min-height: 58px;
     font-weight: 700;
     line-height: 26px;
-    font-family: $font-family-set;
+    font-family: var(--font-family-set);
     color: white;
     text-transform: uppercase;
 
-    background-color: $main-color-blue;
+    background-color: var(--main-color-blue);
     border: none;
 
     &:hover {
-      background-color: $main-color-blue-hover;
+      background-color: var(--main-color-blue-hover);
       cursor: pointer;
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
 
-      background-color: $main-color-blue-active;
+      background-color: var(--main-color-blue-active);
       cursor: pointer;
     }
   }

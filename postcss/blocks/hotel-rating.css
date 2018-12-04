@@ -34,7 +34,9 @@
     height: 17px;
     margin-right: 6px;
 
-    background-image: url("/img/sprite/icon-star.png");
+    background-image: url("../img/sprite.png");
+    background-position: -113px -61px;
+    background-size: 226px 78px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 2px;

@@ -18,7 +18,7 @@
     margin-bottom: 45px;
 
     @mixin third-text;
-    color: $black-light-color;
+    color: var(--black-light-color);
   }
 
   &__search {
@@ -31,11 +31,11 @@
     @mixin second-text;
     font-weight: bold;
     line-height: 26px;
-    font-family: $font-family-set;
+    font-family: var(--font-family-set);
     color: white;
     text-transform: uppercase;
 
-    background-color: $brown-color-button;
+    background-color: var(--brown-color-button);
     border: none;
     cursor: pointer;
   }

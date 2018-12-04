@@ -41,15 +41,24 @@
     width: 113px;
     height: 39px;
 
-    background: url("../img/sprite/ha-logo.png") no-repeat;
+    background-image: url("../img/sprite.png");
+    bacgkround-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 226px 78px;
 
     &:hover,
     &:focus {
-      background: url("../img/sprite/ha-logo-hover.png") no-repeat;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: 0 -39px;
+      background-size: 226px 78px;
     }
 
     &:active {
-      background: url("../img/sprite/ha-logo-active.png") no-repeat;
+      background-image: url("../img/sprite.png");
+      background-repeat: no-repeat;
+      background-position: -113px 0;
+      background-size: 226px 78px;
     }
   }
 }

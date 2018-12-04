@@ -33,15 +33,15 @@
 
     &:hover,
     &:focus {
-      color: $main-color-blue;
+      color: var(--main-color-blue);
     }
 
     &:active {
-      color: $black-color-with-opacity;
+      color: var(--black-color-with-opacity);
     }
 
     &:visited {
-      color: $brown-color-button;
+      color: var(--brown-color-button);
     }
   }
 }

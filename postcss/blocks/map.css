@@ -4,5 +4,8 @@
   min-height: 472px;
   margin-bottom: 2px;
 
-  background: $bgcolor-map-picture url("/img/bg-map.jpg") no-repeat center;
+  background-position: center;
+  background-image: url("../img/bg-map.jpg");
+  background-repeat: no-repeat;
+  background-color: var(--bgcolor-map-picture);
 }
